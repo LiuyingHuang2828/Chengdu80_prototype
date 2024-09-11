@@ -3,9 +3,11 @@ import styled from 'styled-components'
 
 const NewsBodyContainer = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    gap: 7px;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 5px;
 `;
 
 const NewsBody = ({ children }) => {

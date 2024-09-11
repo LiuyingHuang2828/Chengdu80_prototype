@@ -3,12 +3,10 @@ import styled from 'styled-components'
 
 const NewContainerContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: calc(100% - 24px);
     justify-content: flex-start;
     align-items: flex-start;
-    grid-template-columns: repeat(4, 1fr);    
-    grid-template-rows: 1fr;
     gap: 10px;
     h4 {
         font-size: 20px;

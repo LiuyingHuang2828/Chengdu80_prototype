@@ -1,0 +1,14 @@
+{
+  "resourceName": "chengdu80NewsDynamo",
+  "tableName": "chengdu80NewsDynamo",
+  "partitionKey": {
+    "fieldName": "companyName",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "riskCategory",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

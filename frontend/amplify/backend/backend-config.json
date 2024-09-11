@@ -1,1 +1,49 @@
-{}
+{
+  "api": {
+    "fetchNewsApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "fetchNewsLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "fetchNewsLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_fetchNewsLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fetchNewsLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_fetchNewsLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fetchNewsLambda"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "chengdu80NewsDynamo": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

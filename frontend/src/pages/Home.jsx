@@ -9,8 +9,62 @@ import NewsBody from '../components/containers/NewsBody';
 import Cards from '../components/cards/Cards';
 
 
+import { post, get } from 'aws-amplify/api';
+
 const Home = () => {
     const [company, setCompany] = useState('');
+    const [loanRisk, setLoanRisk] = useState([]);
+    const [legalRisk, setLegalRisk] = useState([]);
+    const [operationalRisk, setOperationalRisk] = useState([]);
+    const [othersRisk, setOthersRisk] = useState([]);
+
+    const getNewsData = async () => {
+        try {
+            const { body } = await get({
+                apiName: 'fetchNewsApi',
+                path: `/fetch-news/${company.toLowerCase()}`,
+            }).response;
+
+            const data = await body.json();
+
+            // sort the data into different categories
+            data.filter((news) => {
+                if (news.riskCategory === 'loan risk') {
+                    setLoanRisk(news.article);
+                } else if (news.riskCategory === 'legal risk') {
+                    setLegalRisk(news.article);
+                } else if (news.riskCategory === 'operational risk') {
+                    setOperationalRisk(news.article);
+                } else {
+                    setOthersRisk(news.article);
+                }
+            });
+
+            console.log(legalRisk, loanRisk, operationalRisk, othersRisk);
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+
+    const findNewsData = async () => {
+        try {
+            await post({
+                apiName: 'fetchNewsApi',
+                path: '/fetch-news',
+                options: {
+                    body: {
+                        company_name: company.toLowerCase()
+                    }
+                }
+            }).response;
+
+            await getNewsData();
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     return (
         <Background>
@@ -31,7 +85,7 @@ const Home = () => {
                     Enter a company name
                 </h3>
                 <Input placeholder="Company Name" type="text" onChange={(e) => setCompany(e.target.value)} value={company} />
-                <Button name="Analyze" onClick={() => console.log(company)} />
+                <Button name="Analyze" onClick={findNewsData} />
             </Body>
             <Body>
                 <>
@@ -43,25 +97,49 @@ const Home = () => {
                     </p>
                 </>
                 <NewContainer>
+                    <h4>
+                        Legal
+                    </h4>
+                    {legalRisk.length === 0 && <p>
+                        Sorry, no articles found for this section
+                    </p>}
                     <NewsBody>
-                        <h4>
-                            Legal
-                        </h4>
+                        {legalRisk.map((news, index) => (
+                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                        ))}
                     </NewsBody>
+                    <h4>
+                        Loan
+                    </h4>
+                    {loanRisk.length === 0 && <p>
+                        Sorry, no articles found for this section
+                    </p>}
                     <NewsBody>
-                        <h4>
-                            Loan
-                        </h4>
+                        {loanRisk.map((news, index) => (
+                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                        ))}
                     </NewsBody>
+                    <h4>
+                        Operational
+                    </h4>
+                    {operationalRisk.length === 0 && <p>
+                        Sorry, no articles found for this section
+                    </p>}
                     <NewsBody>
-                        <h4>
-                            Operational
-                        </h4>
+                        {operationalRisk.map((news, index) => (
+                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                        ))}
                     </NewsBody>
+                    <h4>
+                        Others
+                    </h4>
+                    {othersRisk.length === 0 && <p>
+                        Sorry, no articles found for this section
+                    </p>}
                     <NewsBody>
-                        <h4>
-                            Others
-                        </h4>
+                        {othersRisk.map((news, index) => (
+                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                        ))}
                     </NewsBody>
                 </NewContainer>
             </Body>

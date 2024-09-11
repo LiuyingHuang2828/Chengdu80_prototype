@@ -10,6 +10,20 @@
       "StackName": "amplify-chengdu80proto-dev-2442c",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:105396637631:stack/amplify-chengdu80proto-dev-2442c/b3e097d0-7006-11ef-815b-0294a882eab7",
       "AmplifyAppId": "di2wn9126u2gd"
+    },
+    "categories": {
+      "function": {
+        "fetchNewsLambda": {
+          "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
+          "s3Key": "amplify-builds/fetchNewsLambda-56742f72373870484159-build.zip"
+        }
+      },
+      "api": {
+        "fetchNewsApi": {}
+      },
+      "storage": {
+        "chengdu80NewsDynamo": {}
+      }
     }
   }
 }
