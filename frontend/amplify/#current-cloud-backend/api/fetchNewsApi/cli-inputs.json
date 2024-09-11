@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/fetch-news": {
+      "name": "/fetch-news",
+      "lambdaFunction": "fetchNewsLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chengdu80proto-dev-2442c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::105396637631:role/amplify-chengdu80proto-dev-2442c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::105396637631:role/amplify-chengdu80proto-dev-2442c-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
+      "UnauthRoleName": "amplify-chengdu80proto-dev-2442c-unauthRole",
+      "StackName": "amplify-chengdu80proto-dev-2442c",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:105396637631:stack/amplify-chengdu80proto-dev-2442c/b3e097d0-7006-11ef-815b-0294a882eab7",
+      "AmplifyAppId": "di2wn9126u2gd"
+    }
+  },
+  "api": {
+    "fetchNewsApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "fetchNewsLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway",
+      "output": {
+        "ApiName": "fetchNewsApi",
+        "RootUrl": "https://mqv9qer0fa.execute-api.ap-southeast-1.amazonaws.com/dev",
+        "ApiId": "mqv9qer0fa"
+      },
+      "lastPushTimeStamp": "2024-09-11T10:04:27.947Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/api/fetchNewsApi-cloudformation-template.json",
+        "logicalId": "apifetchNewsApi"
+      },
+      "lastPushDirHash": "CimpBAY6iYnhskNH/44D+06ehF0="
+    }
+  },
+  "function": {
+    "fetchNewsLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::105396637631:role/chengdu80protoLambdaRole0d6f0184-dev",
+        "Region": "ap-southeast-1",
+        "Arn": "arn:aws:lambda:ap-southeast-1:105396637631:function:fetchNewsLambda-dev",
+        "Name": "fetchNewsLambda-dev",
+        "LambdaExecutionRole": "chengdu80protoLambdaRole0d6f0184-dev"
+      },
+      "lastPushTimeStamp": "2024-09-11T10:04:27.948Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/function/fetchNewsLambda-cloudformation-template.json",
+        "logicalId": "functionfetchNewsLambda"
+      },
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
+        "s3Key": "amplify-builds/fetchNewsLambda-56742f72373870484159-build.zip"
+      },
+      "lastBuildTimeStamp": "2024-09-11T10:00:27.277Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-09-11T10:00:30.999Z",
+      "distZipFilename": "fetchNewsLambda-56742f72373870484159-build.zip",
+      "lastPushDirHash": "Vt/r78pHAYZLpW9kNlvKuXgkrS0="
+    }
+  },
+  "storage": {
+    "chengdu80NewsDynamo": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB",
+      "output": {
+        "PartitionKeyName": "companyName",
+        "SortKeyName": "riskCategory",
+        "SortKeyType": "S",
+        "Region": "ap-southeast-1",
+        "Arn": "arn:aws:dynamodb:ap-southeast-1:105396637631:table/chengdu80NewsDynamo-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-southeast-1:105396637631:table/chengdu80NewsDynamo-dev/stream/2024-09-11T07:19:46.882",
+        "PartitionKeyType": "S",
+        "Name": "chengdu80NewsDynamo-dev"
+      },
+      "lastPushTimeStamp": "2024-09-11T10:04:27.949Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/storage/chengdu80NewsDynamo-cloudformation-template.json",
+        "logicalId": "storagechengdu80NewsDynamo"
+      },
+      "lastPushDirHash": "I91riDaMkStW8FDewVg04h7sZ3s="
+    }
+  }
+}

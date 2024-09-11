@@ -1,0 +1,17 @@
+{
+  "aws_project_region": "ap-southeast-1",
+  "aws_cloud_logic_custom": [
+    {
+      "name": "fetchNewsApi",
+      "endpoint": "https://mqv9qer0fa.execute-api.ap-southeast-1.amazonaws.com/dev",
+      "region": "ap-southeast-1"
+    }
+  ],
+  "aws_dynamodb_all_tables_region": "ap-southeast-1",
+  "aws_dynamodb_table_schemas": [
+    {
+      "tableName": "chengdu80NewsDynamo-dev",
+      "region": "ap-southeast-1"
+    }
+  ]
+}
