@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chengdu80proto-dev-2442c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::105396637631:role/amplify-chengdu80proto-dev-2442c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::105396637631:role/amplify-chengdu80proto-dev-2442c-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
+      "UnauthRoleName": "amplify-chengdu80proto-dev-2442c-unauthRole",
+      "StackName": "amplify-chengdu80proto-dev-2442c",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:105396637631:stack/amplify-chengdu80proto-dev-2442c/b3e097d0-7006-11ef-815b-0294a882eab7",
+      "AmplifyAppId": "di2wn9126u2gd"
+    }
+  }
+}
