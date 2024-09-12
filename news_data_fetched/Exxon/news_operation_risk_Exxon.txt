@@ -1,0 +1,8 @@
+[{'publishedAt': '2024-08-12T17:37:23Z',
+  'author': 'Investing.com',
+  'urlToImage': 'https://i-invdn-com.investing.com/news/LYNXNPEC0R0QY_L.jpg',
+  'description': 'Earnings call: YPF reported a 20% increase in shale oil production from the Vaca Muerta',
+  'source': {'name': 'Investing.com', 'id': None},
+  'title': 'Earnings call: YPF reported a 20% increase in shale oil production from the Vaca Muerta',
+  'url': 'https://www.investing.com/news/stock-market-news/earnings-call-ypf-reported-a-20-increase-in-shale-oil-production-from-the-vaca-muerta-93CH-3567317',
+  'content': 'In their 2Q 2024 earnings call, YPF S.A. (YPF) executives highlighted a period of robust growth and strategic advancements. The company reported a 20% increase in shale oil production from the Vaca M… [+53076 chars]'}]
