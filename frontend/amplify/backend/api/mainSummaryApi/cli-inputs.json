@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/main-summary": {
+      "name": "/main-summary",
+      "lambdaFunction": "mainSummaryLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

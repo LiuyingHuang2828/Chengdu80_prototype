@@ -21,6 +21,7 @@ const Home = () => {
     const [othersRisk, setOthersRisk] = useState([]);
     const [selectedRisk, setSelectedRisk] = useState('legal risk');
     const [riskSummary, setRiskSummary] = useState([]);
+    const [mainSummary, setMainSummary] = useState('');
 
     const [step, setStep] = useState([]);
 
@@ -78,6 +79,26 @@ const Home = () => {
         }
     };
 
+    const generateMainSummary = async () => {
+        try {
+            const { body } = await post({
+                apiName: 'mainSummaryApi',
+                path: '/main-summary',
+                options: {
+                    body: {
+                        company_name: company.toLowerCase()
+                    }
+                }
+            }).response;
+
+            const data = await body.json();
+
+            console.log(data);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     const getSummary = async () => {
         try {
             const { body } = await get({
@@ -96,8 +117,29 @@ const Home = () => {
         }
     }
 
+    const getMainSummary = async () => {
+        try {
+            const { body } = await get({
+                apiName: 'mainSummaryApi',
+                path: `/main-summary/${company.toLowerCase()}`,
+            }).response;
+
+            const data = await body.json();
+
+            console.log(data);
+
+            setMainSummary(data);
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     const findNewsData = async () => {
         try {
+
+            setStep([]);
+
             await post({
                 apiName: 'fetchNewsApi',
                 path: '/fetch-news',
@@ -119,6 +161,13 @@ const Home = () => {
             await getSummary();
 
             setStep([0, 1]);
+
+            await generateMainSummary();
+
+            await getMainSummary();
+
+            setStep([0, 1, 2]);
+
         } catch (error) {
             console.error(error);
         }
@@ -224,6 +273,21 @@ const Home = () => {
                         </ReactMarkdown>
                     </>)}
                     {riskSummary.length === 0 && <p>No data found</p>}
+                </Body>
+            }
+            {step.includes(2) &&
+                <Body>
+                    <h3>
+                        Main Summary
+                    </h3>
+                    <p>
+                        Using the summaries of the 4 different categories, we will provide you with a main summary and a final risk score.
+                    </p>
+                    {mainSummary && (<>
+                        <ReactMarkdown>
+                            {mainSummary}
+                        </ReactMarkdown>
+                    </>)}
                 </Body>
             }
         </Background>

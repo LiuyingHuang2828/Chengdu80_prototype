@@ -31,7 +31,7 @@
         "RootUrl": "https://mqv9qer0fa.execute-api.ap-southeast-1.amazonaws.com/dev",
         "ApiId": "mqv9qer0fa"
       },
-      "lastPushTimeStamp": "2024-09-13T07:04:17.835Z",
+      "lastPushTimeStamp": "2024-09-13T08:26:25.949Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/api/fetchNewsApi-cloudformation-template.json",
         "logicalId": "apifetchNewsApi"
@@ -55,13 +55,38 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/api/riskSummaryApi-cloudformation-template.json",
         "logicalId": "apiriskSummaryApi"
       },
-      "lastPushTimeStamp": "2024-09-13T07:04:17.838Z",
+      "lastPushTimeStamp": "2024-09-13T08:26:25.953Z",
       "output": {
         "ApiName": "riskSummaryApi",
         "RootUrl": "https://h3vrz5yyc2.execute-api.ap-southeast-1.amazonaws.com/dev",
         "ApiId": "h3vrz5yyc2"
       },
       "lastPushDirHash": "CzthgvV/C47LOlCCwBR9r/l0QtM="
+    },
+    "mainSummaryApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "mainSummaryLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/api/mainSummaryApi-cloudformation-template.json",
+        "logicalId": "apimainSummaryApi"
+      },
+      "lastPushTimeStamp": "2024-09-13T08:26:25.954Z",
+      "output": {
+        "ApiName": "mainSummaryApi",
+        "RootUrl": "https://c4tp8kygqk.execute-api.ap-southeast-1.amazonaws.com/dev",
+        "ApiId": "c4tp8kygqk"
+      },
+      "lastPushDirHash": "RVX9rSvp/DNZbwoEQ99rYmt991w="
     }
   },
   "function": {
@@ -76,7 +101,7 @@
         "Name": "fetchNewsLambda-dev",
         "LambdaExecutionRole": "chengdu80protoLambdaRole0d6f0184-dev"
       },
-      "lastPushTimeStamp": "2024-09-13T07:04:17.840Z",
+      "lastPushTimeStamp": "2024-09-13T08:26:25.957Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/function/fetchNewsLambda-cloudformation-template.json",
         "logicalId": "functionfetchNewsLambda"
@@ -96,7 +121,7 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
       "dependsOn": [],
-      "lastPushTimeStamp": "2024-09-13T07:04:17.948Z",
+      "lastPushTimeStamp": "2024-09-13T08:26:25.958Z",
       "lastBuildTimeStamp": "2024-09-13T07:03:07.981Z",
       "lastBuildType": "PROD",
       "lastPackageTimeStamp": "2024-09-13T07:03:13.692Z",
@@ -117,6 +142,32 @@
         "LambdaExecutionRole": "chengdu80protoLambdaRole4138e4a2-dev"
       },
       "lastPushDirHash": "u/iZuHqpcX+Q5+ul+OCCAa4aReI="
+    },
+    "mainSummaryLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-09-13T08:25:14.819Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-09-13T08:25:21.516Z",
+      "distZipFilename": "mainSummaryLambda-4646334b336144566259-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
+        "s3Key": "amplify-builds/mainSummaryLambda-4646334b336144566259-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/function/mainSummaryLambda-cloudformation-template.json",
+        "logicalId": "functionmainSummaryLambda"
+      },
+      "lastPushTimeStamp": "2024-09-13T08:26:26.061Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::105396637631:role/chengdu80protoLambdaRolef25dd4b9-dev",
+        "Region": "ap-southeast-1",
+        "Arn": "arn:aws:lambda:ap-southeast-1:105396637631:function:mainSummaryLambda-dev",
+        "Name": "mainSummaryLambda-dev",
+        "LambdaExecutionRole": "chengdu80protoLambdaRolef25dd4b9-dev"
+      },
+      "lastPushDirHash": "FF3K3aDVbYMF7kNsFNJTcwn/Ezo="
     }
   },
   "storage": {
@@ -133,7 +184,7 @@
         "PartitionKeyType": "S",
         "Name": "chengdu80NewsDynamo-dev"
       },
-      "lastPushTimeStamp": "2024-09-13T07:04:17.843Z",
+      "lastPushTimeStamp": "2024-09-13T08:26:25.962Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/storage/chengdu80NewsDynamo-cloudformation-template.json",
         "logicalId": "storagechengdu80NewsDynamo"
@@ -147,7 +198,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/storage/riskSummaryDynamo-cloudformation-template.json",
         "logicalId": "storageriskSummaryDynamo"
       },
-      "lastPushTimeStamp": "2024-09-13T07:04:17.844Z",
+      "lastPushTimeStamp": "2024-09-13T08:26:25.963Z",
       "output": {
         "PartitionKeyName": "companyName",
         "SortKeyName": "riskCategory",
@@ -159,6 +210,24 @@
         "Name": "riskSummaryDynamo-dev"
       },
       "lastPushDirHash": "fwdKrgvYZHJzdXnkTkfAz8uWdio="
+    },
+    "mainSummaryDynamo": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/storage/mainSummaryDynamo-cloudformation-template.json",
+        "logicalId": "storagemainSummaryDynamo"
+      },
+      "lastPushTimeStamp": "2024-09-13T08:26:25.967Z",
+      "output": {
+        "PartitionKeyName": "companyName",
+        "Region": "ap-southeast-1",
+        "Arn": "arn:aws:dynamodb:ap-southeast-1:105396637631:table/mainSummaryDynamo-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-southeast-1:105396637631:table/mainSummaryDynamo-dev/stream/2024-09-13T08:09:49.130",
+        "PartitionKeyType": "S",
+        "Name": "mainSummaryDynamo-dev"
+      },
+      "lastPushDirHash": "K6h0h9HMvgltxbOB0UB23im4xyg="
     }
   }
 }

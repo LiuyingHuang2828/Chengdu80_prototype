@@ -1,0 +1,10 @@
+{
+  "resourceName": "mainSummaryDynamo",
+  "tableName": "mainSummaryDynamo",
+  "partitionKey": {
+    "fieldName": "companyName",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

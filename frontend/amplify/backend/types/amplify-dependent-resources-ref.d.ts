@@ -5,6 +5,11 @@ export type AmplifyDependentResourcesAttributes = {
       "ApiName": "string",
       "RootUrl": "string"
     },
+    "mainSummaryApi": {
+      "ApiId": "string",
+      "ApiName": "string",
+      "RootUrl": "string"
+    },
     "riskSummaryApi": {
       "ApiId": "string",
       "ApiName": "string",
@@ -13,6 +18,13 @@ export type AmplifyDependentResourcesAttributes = {
   },
   "function": {
     "fetchNewsLambda": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    },
+    "mainSummaryLambda": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
@@ -36,6 +48,14 @@ export type AmplifyDependentResourcesAttributes = {
       "Region": "string",
       "SortKeyName": "string",
       "SortKeyType": "string",
+      "StreamArn": "string"
+    },
+    "mainSummaryDynamo": {
+      "Arn": "string",
+      "Name": "string",
+      "PartitionKeyName": "string",
+      "PartitionKeyType": "string",
+      "Region": "string",
       "StreamArn": "string"
     },
     "riskSummaryDynamo": {
