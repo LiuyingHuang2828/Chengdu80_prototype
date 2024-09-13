@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/risk-summary": {
+      "name": "/risk-summary",
+      "lambdaFunction": "riskSummaryLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

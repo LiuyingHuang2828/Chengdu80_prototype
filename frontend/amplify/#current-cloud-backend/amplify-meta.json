@@ -31,12 +31,37 @@
         "RootUrl": "https://mqv9qer0fa.execute-api.ap-southeast-1.amazonaws.com/dev",
         "ApiId": "mqv9qer0fa"
       },
-      "lastPushTimeStamp": "2024-09-11T10:01:33.168Z",
+      "lastPushTimeStamp": "2024-09-13T07:04:17.835Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/api/fetchNewsApi-cloudformation-template.json",
         "logicalId": "apifetchNewsApi"
       },
       "lastPushDirHash": "CimpBAY6iYnhskNH/44D+06ehF0="
+    },
+    "riskSummaryApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "riskSummaryLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/api/riskSummaryApi-cloudformation-template.json",
+        "logicalId": "apiriskSummaryApi"
+      },
+      "lastPushTimeStamp": "2024-09-13T07:04:17.838Z",
+      "output": {
+        "ApiName": "riskSummaryApi",
+        "RootUrl": "https://h3vrz5yyc2.execute-api.ap-southeast-1.amazonaws.com/dev",
+        "ApiId": "h3vrz5yyc2"
+      },
+      "lastPushDirHash": "CzthgvV/C47LOlCCwBR9r/l0QtM="
     }
   },
   "function": {
@@ -51,7 +76,7 @@
         "Name": "fetchNewsLambda-dev",
         "LambdaExecutionRole": "chengdu80protoLambdaRole0d6f0184-dev"
       },
-      "lastPushTimeStamp": "2024-09-11T10:01:33.168Z",
+      "lastPushTimeStamp": "2024-09-13T07:04:17.840Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/function/fetchNewsLambda-cloudformation-template.json",
         "logicalId": "functionfetchNewsLambda"
@@ -65,6 +90,33 @@
       "lastPackageTimeStamp": "2024-09-11T10:00:30.999Z",
       "distZipFilename": "fetchNewsLambda-56742f72373870484159-build.zip",
       "lastPushDirHash": "Vt/r78pHAYZLpW9kNlvKuXgkrS0="
+    },
+    "riskSummaryLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-09-13T07:04:17.948Z",
+      "lastBuildTimeStamp": "2024-09-13T07:03:07.981Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-09-13T07:03:13.692Z",
+      "distZipFilename": "riskSummaryLambda-752f695a754871706358-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
+        "s3Key": "amplify-builds/riskSummaryLambda-752f695a754871706358-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/function/riskSummaryLambda-cloudformation-template.json",
+        "logicalId": "functionriskSummaryLambda"
+      },
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::105396637631:role/chengdu80protoLambdaRole4138e4a2-dev",
+        "Region": "ap-southeast-1",
+        "Arn": "arn:aws:lambda:ap-southeast-1:105396637631:function:riskSummaryLambda-dev",
+        "Name": "riskSummaryLambda-dev",
+        "LambdaExecutionRole": "chengdu80protoLambdaRole4138e4a2-dev"
+      },
+      "lastPushDirHash": "u/iZuHqpcX+Q5+ul+OCCAa4aReI="
     }
   },
   "storage": {
@@ -81,12 +133,32 @@
         "PartitionKeyType": "S",
         "Name": "chengdu80NewsDynamo-dev"
       },
-      "lastPushTimeStamp": "2024-09-11T10:01:33.168Z",
+      "lastPushTimeStamp": "2024-09-13T07:04:17.843Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/storage/chengdu80NewsDynamo-cloudformation-template.json",
         "logicalId": "storagechengdu80NewsDynamo"
       },
       "lastPushDirHash": "I91riDaMkStW8FDewVg04h7sZ3s="
+    },
+    "riskSummaryDynamo": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chengdu80proto-dev-2442c-deployment/amplify-cfn-templates/storage/riskSummaryDynamo-cloudformation-template.json",
+        "logicalId": "storageriskSummaryDynamo"
+      },
+      "lastPushTimeStamp": "2024-09-13T07:04:17.844Z",
+      "output": {
+        "PartitionKeyName": "companyName",
+        "SortKeyName": "riskCategory",
+        "SortKeyType": "S",
+        "Region": "ap-southeast-1",
+        "Arn": "arn:aws:dynamodb:ap-southeast-1:105396637631:table/riskSummaryDynamo-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-southeast-1:105396637631:table/riskSummaryDynamo-dev/stream/2024-09-12T14:37:32.407",
+        "PartitionKeyType": "S",
+        "Name": "riskSummaryDynamo-dev"
+      },
+      "lastPushDirHash": "fwdKrgvYZHJzdXnkTkfAz8uWdio="
     }
   }
 }

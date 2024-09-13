@@ -1,0 +1,14 @@
+{
+  "resourceName": "riskSummaryDynamo",
+  "tableName": "riskSummaryDynamo",
+  "partitionKey": {
+    "fieldName": "companyName",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "riskCategory",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
