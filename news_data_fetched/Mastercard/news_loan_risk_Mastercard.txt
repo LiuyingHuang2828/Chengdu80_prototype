@@ -1,0 +1,8 @@
+[{'publishedAt': '2024-08-29T08:26:26Z',
+  'author': 'Investing.com',
+  'urlToImage': 'https://i-invdn-com.investing.com/news/LYNXMPEB280W7_L.jpg',
+  'description': 'Earnings call: RBC reports robust Q3 results, capital strength',
+  'source': {'name': 'Investing.com', 'id': None},
+  'title': 'Earnings call: RBC reports robust Q3 results, capital strength',
+  'url': 'https://www.investing.com/news/stock-market-news/earnings-call-rbc-reports-robust-q3-results-capital-strength-93CH-3592582',
+  'content': 'Royal Bank of Canada (RBC) announced its financial results for the third quarter of 2024, showcasing a solid performance with earnings of CAD 4.5 billion and adjusted earnings of CAD 4.7 billion. \r\nT… [+75547 chars]'}]

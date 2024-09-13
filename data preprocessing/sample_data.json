@@ -1,0 +1,64 @@
+[
+    {
+        "article": [            
+            {
+            "publishedAt": "2024-08-31T00:56:15Z",
+            "author": "AFP",
+            "urlToImage": "https://img.etimg.com/thumb/msid-112938430,width-1200,height-630,imgsize-69918,overlay-economictimes/photo.jpg",
+            "description": "A Supreme Court judge on Friday ordered the suspension of Elon Musk's X social media network in Brazil after the billionaire failed to comply with an order to name a new legal representative for the company. On Wednesday, Moraes told Musk \"to appoint the comp\u2026",
+            "source": {
+                "name": "The Times of India",
+                "id": "the-times-of-india"
+            },
+            "title": "Brazil judge orders shutdown of X social network; Elon Musk furious",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/brazil-judge-orders-shutdown-of-x-social-network-elon-musk-furious/articleshow/112938406.cms",
+            "content": "A Supreme Court judge on Friday ordered the suspension of Elon Musk's X social media network in Brazil after the billionaire failed to comply with an order to name a new legal representative for the \u2026 [+3961 chars]"
+            }
+        ],
+        "companyName": "tesla",
+        "riskCategory": "legal risk"
+    },
+    {
+        "article": [],
+        "companyName": "tesla",
+        "riskCategory": "loan risk"
+    },
+    {
+        "article": [
+            {
+                "publishedAt": "2024-08-25T11:22:30Z",
+                "author": "Rich Ord",
+                "urlToImage": "https://www.webpronews.com/wp-content/uploads/2024/08/Elon-Musk-082524.jpeg",
+                "description": "It's about reimagining entire industries and solving problems that others consider impossible. In a world where many companies innovate within the confines of what is expected, Musk consistently challenges the status quo, pushing the boundaries of what techno\u2026",
+                "source": {
+                    "name": "WebProNews",
+                    "id": null
+                },
+                "title": "Elon Musk: Innovating The Impossible",
+                "url": "https://www.webpronews.com/elon-musk-innovating-the-impossible/",
+                "content": "Elon Musk has long been a figure synonymous with innovation, disruption, and boundary-pushing ideas. His ventures span industries as diverse as automotive, space exploration, energy storage, artifici\u2026 [+7973 chars]"
+            }
+        ],
+        "companyName": "tesla",
+        "riskCategory": "operation risk"
+    },
+    {
+        "article": [
+            {
+                "publishedAt": "2024-08-13T12:30:00Z",
+                "author": "Reuters",
+                "urlToImage": "https://edgecast-img.yahoo.net/mysterio/api/46B762981139B287532F0540660540072132FF60F887BDB3A85899A1FE18CD15/autoblog/resizefill_w1200_h675;quality_85;format_webp;cc_31536000;/https://s.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1200x675/format/jpg/quality/100/https://s.aolcdn.com/os/ab/_cms/2022/08/01122916/mercedes-eqe-sedan.jpg",
+                "description": "Filed under:\n By the Numbers,Earnings/Financials,Government/Legal,Green,Electric\n Continue reading Leasing model behind Europe's EV drive at risk of breakdown\nLeasing model behind Europe's EV drive at risk of breakdown originally appeared on Autoblog on Tue, \u2026",
+                "source": {
+                    "name": "Autoblog",
+                    "id": null
+                },
+                "title": "Leasing model behind Europe's EV drive at risk of breakdown",
+                "url": "https://www.autoblog.com/2024/08/13/leasing-model-behind-europes-ev-drive-at-risk-of-breakdown/",
+                "content": "LONDON - Low resale values for electric cars have pushed the leasing firms that drive Europe's auto market to double prices over the last three years and some are threatening to quit the business alt\u2026 [+7733 chars]"
+            }
+                ],
+        "companyName": "tesla",
+        "riskCategory": "other risks"
+    }
+]

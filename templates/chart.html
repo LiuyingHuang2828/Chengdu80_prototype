@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAPL Stock Price</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <style>
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            color: #333;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #007bff;
+            color: white;
+            border: 1px solid #007bff;
+        }
+
+        #container {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <!-- Tab buttons for 1 Week, 1 Month, and 3 Months -->
+        <button id="btn-1w" class="btn active" onclick="loadData('1w', this)">1 Week</button>
+        <button id="btn-1m" class="btn" onclick="loadData('1m', this)">1 Month</button>
+        <button id="btn-3m" class="btn" onclick="loadData('3m', this)">3 Months</button>
+    </div>
+
+    <div id="container"></div>
+
+    <script type="text/javascript">
+        var chart;
+
+        // Placeholder data; this will be replaced dynamically
+        var stockData1w = {{ data_1w | safe }};
+        var stockData1m = {{ data_1m | safe }};
+        var stockData3m = {{ data_3m | safe }};
+
+        // Function to load data dynamically based on selected period
+        function loadData(period, btn) {
+            var data;
+            if (period === '1w') {
+                data = stockData1w;
+            } else if (period === '1m') {
+                data = stockData1m;
+            } else if (period === '3m') {
+                data = stockData3m;
+            }
+
+            // Clear existing series data before updating
+            chart.series[0].setData([]);
+
+            // Now update with the selected data
+            chart.series[0].setData(data, true);
+
+            // Remove 'active' class from all buttons
+            var buttons = document.querySelectorAll('.btn');
+            buttons.forEach(function (button) {
+                button.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked button
+            btn.classList.add('active');
+        }
+
+        // Initialize the Highcharts chart
+        document.addEventListener('DOMContentLoaded', function () {
+            chart = Highcharts.chart('container', {
+                chart: {
+                    backgroundColor: 'black'  // Set background color to black
+                },
+                title: {
+                    text: 'AAPL Stock Price',
+                    align: 'center',
+                    style: {
+                        color: 'white'  // Title text color
+                    }
+                },
+                subtitle: {
+                    text: 'Source: yfinance',
+                    align: 'left',
+                    style: {
+                        color: 'white'  // Subtitle text color
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Close Price (USD)',
+                        style: {
+                            color: 'white'  // Y-axis title color
+                        }
+                    },
+                    labels: {
+                        style: {
+                            color: 'white'  // Y-axis labels color
+                        }
+                    },
+                    gridLineColor: '#333'  // Darker grid lines to match black background
+                },
+                xAxis: {
+                    type: 'datetime',
+                    title: {
+                        text: 'Date',
+                        style: {
+                            color: 'white'  // X-axis title color
+                        }
+                    },
+                    labels: {
+                        style: {
+                            color: 'white'  // X-axis labels color
+                        }
+                    },
+                    gridLineColor: '#333'  // Darker grid lines for x-axis
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'AAPL Close Price',
+                    data: stockData1w,  // Default is 1-week data
+                    color: 'pink',  // Set the line color to pink
+                    lineWidth: 2,  // Set the line width
+                    tooltip: {
+                        valueDecimals: 2
+                    }
+                }],
+                plotOptions: {
+                    series: {
+                        marker: {
+                            enabled: false  // Disable point markers for cleaner lines
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

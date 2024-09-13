@@ -13,11 +13,50 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
+    },
+    "mainSummaryApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "mainSummaryLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "riskSummaryApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "riskSummaryLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "function": {
     "fetchNewsLambda": {
       "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "mainSummaryLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "riskSummaryLambda": {
+      "build": true,
+      "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
@@ -38,10 +77,50 @@
           "resourceName": "fetchNewsLambda"
         }
       ]
+    },
+    "AMPLIFY_function_mainSummaryLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mainSummaryLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_mainSummaryLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mainSummaryLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_riskSummaryLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "riskSummaryLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_riskSummaryLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "riskSummaryLambda"
+        }
+      ]
     }
   },
   "storage": {
     "chengdu80NewsDynamo": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "mainSummaryDynamo": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "riskSummaryDynamo": {
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB"
     }

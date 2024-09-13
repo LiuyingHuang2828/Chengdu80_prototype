@@ -5,12 +5,30 @@
       "name": "fetchNewsApi",
       "endpoint": "https://mqv9qer0fa.execute-api.ap-southeast-1.amazonaws.com/dev",
       "region": "ap-southeast-1"
+    },
+    {
+      "name": "riskSummaryApi",
+      "endpoint": "https://h3vrz5yyc2.execute-api.ap-southeast-1.amazonaws.com/dev",
+      "region": "ap-southeast-1"
+    },
+    {
+      "name": "mainSummaryApi",
+      "endpoint": "https://c4tp8kygqk.execute-api.ap-southeast-1.amazonaws.com/dev",
+      "region": "ap-southeast-1"
     }
   ],
   "aws_dynamodb_all_tables_region": "ap-southeast-1",
   "aws_dynamodb_table_schemas": [
     {
       "tableName": "chengdu80NewsDynamo-dev",
+      "region": "ap-southeast-1"
+    },
+    {
+      "tableName": "riskSummaryDynamo-dev",
+      "region": "ap-southeast-1"
+    },
+    {
+      "tableName": "mainSummaryDynamo-dev",
       "region": "ap-southeast-1"
     }
   ]

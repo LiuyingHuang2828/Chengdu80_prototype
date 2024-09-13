@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
+import ReactMarkdown from 'react-markdown';
 import Background from '../components/background/Background';
 import Header from '../components/containers/Header';
 import Body from '../components/containers/Body';
@@ -7,6 +8,7 @@ import Button from '../components/button/Button';
 import NewContainer from '../components/containers/NewContainer';
 import NewsBody from '../components/containers/NewsBody';
 import Cards from '../components/cards/Cards';
+import Selector from '../components/selector/Selector';
 
 
 import { post, get } from 'aws-amplify/api';
@@ -17,6 +19,13 @@ const Home = () => {
     const [legalRisk, setLegalRisk] = useState([]);
     const [operationalRisk, setOperationalRisk] = useState([]);
     const [othersRisk, setOthersRisk] = useState([]);
+    const [selectedRisk, setSelectedRisk] = useState('legal risk');
+    const [riskSummary, setRiskSummary] = useState([]);
+    const [mainSummary, setMainSummary] = useState('');
+
+    const [step, setStep] = useState([]);
+
+    const options = ['legal risk', 'loan risk', 'operational risk', 'other risks'];
 
     const getNewsData = async () => {
         try {
@@ -38,6 +47,8 @@ const Home = () => {
                 } else {
                     setOthersRisk(news.article);
                 }
+
+                return null;
             });
 
             console.log(legalRisk, loanRisk, operationalRisk, othersRisk);
@@ -47,9 +58,88 @@ const Home = () => {
         }
     }
 
+    const summarizeNews = async (riskCategory) => {
+        try {
+            const { body } = await post({
+                apiName: 'riskSummaryApi',
+                path: '/risk-summary',
+                options: {
+                    body: {
+                        company_name: company.toLowerCase(),
+                        risk_category: riskCategory
+                    }
+                }
+            }).response;
+
+            const data = await body.json();
+
+            console.log(data);
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    const generateMainSummary = async () => {
+        try {
+            const { body } = await post({
+                apiName: 'mainSummaryApi',
+                path: '/main-summary',
+                options: {
+                    body: {
+                        company_name: company.toLowerCase()
+                    }
+                }
+            }).response;
+
+            const data = await body.json();
+
+            console.log(data);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    const getSummary = async () => {
+        try {
+            const { body } = await get({
+                apiName: 'riskSummaryApi',
+                path: `/risk-summary/${company.toLowerCase()}`,
+            }).response;
+
+            const data = await body.json();
+
+            console.log(data);
+
+            setRiskSummary(data);
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    const getMainSummary = async () => {
+        try {
+            const { body } = await get({
+                apiName: 'mainSummaryApi',
+                path: `/main-summary/${company.toLowerCase()}`,
+            }).response;
+
+            const data = await body.json();
+
+            console.log(data);
+
+            setMainSummary(data);
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     const findNewsData = async () => {
         try {
+
+            setStep([]);
+
             await post({
                 apiName: 'fetchNewsApi',
                 path: '/fetch-news',
@@ -61,10 +151,34 @@ const Home = () => {
             }).response;
 
             await getNewsData();
+
+            setStep([0]);
+
+            for (let i = 0; i < options.length; i++) {
+                await summarizeNews(options[i]);
+            }
+
+            await getSummary();
+
+            setStep([0, 1]);
+
+            await generateMainSummary();
+
+            await getMainSummary();
+
+            setStep([0, 1, 2]);
+
         } catch (error) {
             console.error(error);
         }
     }
+
+    const filteredRisks = useMemo(() => {
+        console.log(riskSummary);
+        return selectedRisk
+            ? riskSummary.filter((risk) => risk.riskCategory === selectedRisk)
+            : [];
+    }, [riskSummary, selectedRisk]);
 
     return (
         <Background>
@@ -87,62 +201,95 @@ const Home = () => {
                 <Input placeholder="Company Name" type="text" onChange={(e) => setCompany(e.target.value)} value={company} />
                 <Button name="Analyze" onClick={findNewsData} />
             </Body>
-            <Body>
-                <>
+            {step.includes(0) &&
+                <Body>
+                    <>
+                        <h3>
+                            News Fetched
+                        </h3>
+                        <p>
+                            News fetched will be categorized into 4 types of categories of risk: legal, loan, operational and others.
+                        </p>
+                    </>
+                    <NewContainer>
+                        <h4>
+                            Legal
+                        </h4>
+                        {legalRisk.length === 0 && <p>
+                            Sorry, no articles found for this section
+                        </p>}
+                        <NewsBody>
+                            {legalRisk.map((news, index) => (
+                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                            ))}
+                        </NewsBody>
+                        <h4>
+                            Loan
+                        </h4>
+                        {loanRisk.length === 0 && <p>
+                            Sorry, no articles found for this section
+                        </p>}
+                        <NewsBody>
+                            {loanRisk.map((news, index) => (
+                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                            ))}
+                        </NewsBody>
+                        <h4>
+                            Operational
+                        </h4>
+                        {operationalRisk.length === 0 && <p>
+                            Sorry, no articles found for this section
+                        </p>}
+                        <NewsBody>
+                            {operationalRisk.map((news, index) => (
+                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                            ))}
+                        </NewsBody>
+                        <h4>
+                            Others
+                        </h4>
+                        {othersRisk.length === 0 && <p>
+                            Sorry, no articles found for this section
+                        </p>}
+                        <NewsBody>
+                            {othersRisk.map((news, index) => (
+                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                            ))}
+                        </NewsBody>
+                    </NewContainer>
+                </Body>}
+            {step.includes(1) &&
+                <Body>
                     <h3>
-                        News Fetched
+                        Risk Analysis
                     </h3>
                     <p>
-                        News fetched will be categorized into 4 types of categories of risk: legal, loan, operational and others.
+                        Using the news fetched, we will provide you with 4 different summaries of the news fetched and provide you with a risk score.
                     </p>
-                </>
-                <NewContainer>
-                    <h4>
-                        Legal
-                    </h4>
-                    {legalRisk.length === 0 && <p>
-                        Sorry, no articles found for this section
-                    </p>}
-                    <NewsBody>
-                        {legalRisk.map((news, index) => (
-                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                        ))}
-                    </NewsBody>
-                    <h4>
-                        Loan
-                    </h4>
-                    {loanRisk.length === 0 && <p>
-                        Sorry, no articles found for this section
-                    </p>}
-                    <NewsBody>
-                        {loanRisk.map((news, index) => (
-                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                        ))}
-                    </NewsBody>
-                    <h4>
-                        Operational
-                    </h4>
-                    {operationalRisk.length === 0 && <p>
-                        Sorry, no articles found for this section
-                    </p>}
-                    <NewsBody>
-                        {operationalRisk.map((news, index) => (
-                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                        ))}
-                    </NewsBody>
-                    <h4>
-                        Others
-                    </h4>
-                    {othersRisk.length === 0 && <p>
-                        Sorry, no articles found for this section
-                    </p>}
-                    <NewsBody>
-                        {othersRisk.map((news, index) => (
-                            <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                        ))}
-                    </NewsBody>
-                </NewContainer>
-            </Body>
+                    <Selector options={options} selected={selectedRisk} setOption={setSelectedRisk} />
+                    {riskSummary.length > 0 && (<>
+                        <ReactMarkdown>
+                            {filteredRisks[0]?.summary}
+                        </ReactMarkdown>
+                    </>)}
+                    {riskSummary.length === 0 && <p>No data found</p>}
+                </Body>
+            }
+            {step.includes(2) &&
+                <Body>
+                    <h3>
+                        Main Summary
+                    </h3>
+                    <p>
+                        Using the summaries of the 4 different categories, we will provide you with a main summary and a final risk score.
+                    </p>
+                    {mainSummary && (<>
+                        <ReactMarkdown>
+                            {mainSummary}
+                        </ReactMarkdown>
+                    </>)}
+                </Body>
+            }
         </Background>
     )
 }

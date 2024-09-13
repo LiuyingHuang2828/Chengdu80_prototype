@@ -1,0 +1,400 @@
+Title: Elon Musk: Innovating The Impossible
+Description: It's about reimagining entire industries and solving problems that others consider impossible. In a world where many companies innovate within the confines of what is expected, Musk consistently challenges the status quo, pushing the boundaries of what techno…
+URL: https://www.webpronews.com/elon-musk-innovating-the-impossible/
+
+Title: Five zero-days impacts EoL Cisco Small Business IP Phones. Replace them with newer models asap!
+Description: Cisco warns of critical remote code execution zero-day vulnerabilities impacting end-of-life Small Business SPA 300 and SPA 500 series IP phones. Cisco warns of multiple critical remote code execution zero-day vulnerabilities in end-of-life Small Business SPA…
+URL: https://securityaffairs.com/166811/uncategorized/zero-days-eof-small-business-ip-phones.html
+
+Title: Zyxel fixed critical OS command injection flaw in multiple routers
+Description: Taiwanese manufacturer Zyxel addressed a critical OS command injection flaw affecting multiple models of its business routers. Zyxel has released security updates to address a critical vulnerability, tracked as CVE-2024-7261 (CVSS v3 score of 9.8), impacting …
+URL: https://securityaffairs.com/168020/security/zyxel-os-command-injection-flaw-cve-2024-7261.html
+
+Title: Car rental company Avis discloses a data breach
+Description: Car rental giant Avis disclosed a data breach that impacted one of its business applications in August compromising customers’ personal information. Car rental company Avis notified customers impacted in an Augus data breach. Threat actors breached one of its…
+URL: https://securityaffairs.com/168119/data-breach/car-rental-giant-avis-discloses-data-breach.html
+
+Title: Oracle NetSuite misconfiguration could lead to data exposure
+Description: Researchers discovered thousands of Oracle NetSuite e-stores that are vulnerable to data leak, sensitive customer information is at risk. Cybersecurity researchers from AppOmni warn of a potential issue in Oracle NetSuite SuiteCommerce platform could allow at…
+URL: https://securityaffairs.com/167287/hacking/oracle-netsuite-misconfiguration.html
+
+Title: Apache fixed a new remote code execution flaw in Apache OFBiz
+Description: Apache addressed a remote code execution vulnerability affecting the Apache OFBiz open-source enterprise resource planning (ERP) system. Apache fixed a high-severity vulnerability, tracked as CVE-2024-45195 (CVSS score: 7.5) affecting the Apache OFBiz open-so…
+URL: https://securityaffairs.com/168106/security/apache-ofbiz-rce-cve-2024-45195.html
+
+Title: Zum founder Ritu Narayan explains why she wants to disrupt student transport: ‘As a parent, it is frustrating when you don’t know where the bus is’
+Description: Zum uses AI to re-map school bus routes in real-time and allow its electric school buses to send power back to the grid.
+URL: https://fortune.com/asia/2024/08/10/zum-founder-ritu-narayan-wants-disrupt-school-buses-brainstorm-ai-singapore/
+
+Title: A FreeBSD flaw could allow remote code execution, patch it now!
+Description: FreeBSD Project maintainers addressed a high-severity flaw in OpenSSH that could allow remote code execution with elevated privileges. The maintainers of the FreeBSD Project have released urgent security updates to address a high-severity flaw, tracked as CVE…
+URL: https://securityaffairs.com/166941/security/freebsd-openssh-flaw.html
+
+Title: A PoC exploit code is available for critical Ivanti vTM bug
+Description: Ivanti warned of a critical authentication bypass flaw in its Virtual Traffic Manager (vTM) appliances that can allow attackers to create rogue administrator accounts. Ivanti addressed a critical authentication bypass vulnerability, tracked as CVE-2024-7593 (…
+URL: https://securityaffairs.com/166991/hacking/ivanti-virtual-traffic-manager-flaw.html
+
+Title: Microsoft found OpenVPN bugs that can be chained to achieve RCE and LPE
+Description: Microsoft found four bugs in OpenVPN that could be chained to achieve remote code execution and local privilege escalation. During the Black Hat USA 2024 conference, Microsoft researchers disclosed multiple medium-severity bugs in the open-source project Open…
+URL: https://securityaffairs.com/166912/hacking/openvpn-rce-lpe.html
+
+Title: EastWind campaign targets Russian organizations with sophisticated backdoors
+Description: A campaign tracked as EastWind is targeting Russian government and IT organizations with PlugY and GrewApacha Backdoors. In late July 2024, Kaspersky researchers detected a series of targeted cyberattacks against the Russian government and IT organizations. K…
+URL: https://securityaffairs.com/166924/apt/eastwind-campaign-targets-russian-organizations.html
+
+Title: Phishing attacks target mobile users via progressive web applications (PWA)
+Description: Cybercriminals use progressive web applications (PWA) to impersonate banking apps and steal credentials from mobile users. ESET researchers detailed a phishing campaign against mobile users that uses Progressive Web Applications (PWAs). The threat actors used…
+URL: https://securityaffairs.com/167472/cyber-crime/phishing-relies-progressive-web-applications.html
+
+Title: Banshee Stealer, a new macOS malware with a monthly subscription price of $3,000
+Description: Russian cybercriminals are advertising a new macOS malware called Banshee Stealer with a monthly subscription price of $3,000. In August 2024, Russian crooks advertised a macOS malware called BANSHEE Stealer that can target both x86_64 and ARM64 architectures…
+URL: https://securityaffairs.com/167138/malware/banshee-stealer-macos-malware.html
+
+Title: From 2018: DeepMasterPrints: deceive fingerprint recognition systems with MasterPrints generated with GANs
+Description: Boffins demonstrated the vulnerability of fingerprint recognition systems to dictionary attacks using ‘MasterPrints, ‘which are fingerprints that can match multiple other prints. A team of researchers from US universities demonstrated how to deceive fingerpri…
+URL: https://securityaffairs.com/167219/hacking/deepmasterprints-deceive-fingerprint-recognition-systems-with-masterprints.html
+
+Title: New malware Cthulhu Stealer targets Apple macOS users
+Description: Cato Security found a new info stealer, called Cthulhu Stealer, that targets Apple macOS and steals a wide range of information. Cado Security researchers have discovered a malware-as-a-service (MaaS) targeting macOS users dubbed Cthulhu Stealer. Cthulhu Stea…
+URL: https://securityaffairs.com/167454/malware/cthulhu-stealer-targets-apple-macos.html
+
+Title: Microsoft Patch Tuesday security updates for August 2024 addressed six actively exploited bugs
+Description: Microsoft’s August 2024 Patch Tuesday addressed 90 vulnerabilities, including six that are actively exploited. Patch Tuesday security updates for August 2024 addressed 90 vulnerabilities in Microsoft products including Windows and Windows Components; Office a…
+URL: https://securityaffairs.com/167000/security/microsoft-patch-tuesday-august-2024.html
+
+Title: SolarWinds addressed a critical RCE in all Web Help Desk versions
+Description: SolarWinds addressed a critical remote code execution vulnerability in its Web Help Desk solution for customer support. SolarWinds fixed a critical vulnerability, tracked as CVE-2024-28986 (CVSS score 9.8), in SolarWinds’ Web Help Desk solution for customer s…
+URL: https://securityaffairs.com/167031/security/solarwinds-addressed-rce-whd.html
+
+Title: China-linked APT Earth Baku targets Europe, the Middle East, and Africa
+Description: China-linked threat actor Earth Baku expanded its operations in Europe, the Middle East, and Africa starting in late 2022. China-linked APT group Earth Baku (a threat actor associated with APT41) has expanded its operations beyond the Indo-Pacific region to E…
+URL: https://securityaffairs.com/167044/apt/earth-baku-expanded-operations.html
+
+Title: Researchers uncovered new infrastructure linked to the cybercrime group FIN7
+Description: Team Cymru, Silent Push and Stark Industries Solutions researchers uncovered a new infrastructure linked to the cybercrime group FIN7. Researchers from Team Cymru identified two clusters potentially linked to the cybercrime group FIN7. The team collaborated w…
+URL: https://securityaffairs.com/167258/cyber-crime/experts-found-infrastructure-fin7.html
+
+Title: France police arrested Telegram CEO Pavel Durov
+Description: French police arrested Pavel Durov, founder and chief executive of Telegram, due to the lack of content moderation that advantaged criminal activity. Pavel Durov, the founder and CEO of Telegram, was arrested at Bourget airport near Paris on Saturday evening.…
+URL: https://securityaffairs.com/167556/cyber-crime/police-arrested-telegram-ceo-pavel-durov.html
+
+Title: Experts disclosed a critical information-disclosure flaw in Microsoft Copilot Studio
+Description: Researchers have disclosed a critical security vulnerability in Microsoft’s Copilot Studio that could lead to the exposure of sensitive information. Researchers disclosed a critical security vulnerability, tracked as CVE-2024-38206 (CVSS score: 8.5), impactin…
+URL: https://securityaffairs.com/167353/security/copilot-studio-vulnerability.html
+
+Title: Russian national arrested in Argentina for laundering money of crooks and Lazarus APT
+Description: A Russian national was arrested in Argentina for laundering proceeds from illicit actors, including North Korea-linked Lazarus Group. This week, the Argentine Federal Police (PFA) arrested a Russian national for laundering proceeds from illicit actors and sei…
+URL: https://securityaffairs.com/167485/cyber-crime/russian-national-arrested-laundering-lazarus-funds.html
+
+Title: Qilin ransomware steals credentials stored in Google Chrome
+Description: Sophos researchers investigated a Qilin ransomware breach attack that led to the theft of credentials stored in Google Chrome browsers. Sophos researchers investigated a Qilin ransomware attack where operators stole credentials stored in Google Chrome browser…
+URL: https://securityaffairs.com/167496/cyber-crime/qilin-ransomware-steal-google-chrome-passwords.html
+
+Title: U.S. oil giant Halliburton disclosed a data breach
+Description: U.S. oil company Halliburton disclosed a data breach following the RansomHub ransomware gang attack that occurred in August. In August, Halliburton, a major U.S. oil company, announced that a cyberattack hit its IT infrastructure, particularly impacting opera…
+URL: https://securityaffairs.com/168002/data-breach/halliburton-data-breach.html
+
+Title: Three men plead guilty to running MFA bypass service OTP.Agency
+Description: Three men have pleaded guilty to operating OTP.Agency, an online service that allowed crooks to bypass Multi-Factor authentication (MFA). Three men, Callum Picari (22), Vijayasidhurshan Vijayanathan (21), and Aza Siddeeque (19), have pleaded guilty to operati…
+URL: https://securityaffairs.com/167958/cyber-crime/otp-agency-operators-pleaded-guilty.html
+
+Title: Security Affairs newsletter Round 485 by Pierluigi Paganini – INTERNATIONAL EDITION
+Description: A new round of the weekly SecurityAffairs newsletter arrived! Every week the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including the international press. Large-scale ex…
+URL: https://securityaffairs.com/167207/breaking-news/security-affairs-newsletter-round-485-by-pierluigi-paganini-international-edition.html
+
+Title: Millions of Pixel devices can be hacked due to a pre-installed vulnerable app
+Description: Many Google Pixel devices shipped since September 2017 have included a vulnerable app that could be exploited for malicious purposes. Many Google Pixel devices shipped since September 2017 have included dormant software that could be exploited by attackers to…
+URL: https://securityaffairs.com/167130/security/pixel-devices-pre-installed-vulnerable-app.html
+
+Title: OpenAI dismantled an Iranian influence operation targeting the U.S. presidential election
+Description: OpenAI announced it had dismantled an Iranian influence operation that was producing content related to the U.S. Presidential election. OpenAI has dismantled an Iran-linked influence operation, tracked as identified as Storm-2035, that was generating content …
+URL: https://securityaffairs.com/167194/intelligence/openai-dismantled-iranian-influence-operation.html
+
+Title: Experts warn of exploit attempt for Ivanti vTM bug
+Description: Researchers at the Shadowserver Foundation observed an exploit attempt based on the public PoC for Ivanti vTM bug CVE-2024-7593. Researchers at the Shadowserver Foundation observed an exploit attempt based on the public proof of concept (PoC) for the Ivanti v…
+URL: https://securityaffairs.com/167250/hacking/exploit-attempt-ivanti-vtm-bug.html
+
+Title: US offers $2.5M reward for Belarusian man involved in mass malware distribution
+Description: The US Department of State offers a $2.5 million reward for information leading to the arrest of a Belarusian cybercriminal involved in the mass malware distribution. The US Department of State announced a $2.5 million reward for information leading to the ar…
+URL: https://securityaffairs.com/167684/cyber-crime/belarusian-man-mass-malware-distribution.html
+
+Title: U.S. CISA adds Apache OFBiz bug to its Known Exploited Vulnerabilities catalog
+Description: U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Apache OFBiz bug to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Apache OFBiz Incorrect Authorization Vulnerability CVE-20…
+URL: https://securityaffairs.com/167676/uncategorized/u-s-cisa-apache-ofbiz-known-exploited-vulnerabilities-catalog.html
+
+Title: SonicWall warns that SonicOS bug exploited in attacks
+Description: Recently fixed access control SonicOS vulnerability, tracked as CVE-2024-40766, is potentially exploited in attacks in the wild, SonicWall warns. SonicWall warns that a recently fixed access control flaw, tracked as CVE-2024-40766 (CVSS v3 score: 9.3), in Son…
+URL: https://securityaffairs.com/168112/hacking/sonicwall-sonicos-bug-exploited.html
+
+Title: Security Affairs newsletter Round 488 by Pierluigi Paganini – INTERNATIONAL EDITION
+Description: A new round of the weekly SecurityAffairs newsletter arrived! Every week the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including the international press. U.S. CISA adds…
+URL: https://securityaffairs.com/168159/breaking-news/security-affairs-newsletter-round-488-by-pierluigi-paganini-international-edition.html
+
+Title: A new variant of Cicada ransomware targets VMware ESXi systems
+Description: A new ransomware-as-a-service (RaaS) operation called Cicada3301 has emerged in the threat landscape and already targeted tens of companies. Cicada3301 is a new ransomware-as-a-service (RaaS) operation that appeared in the threat landscape. The group appears …
+URL: https://securityaffairs.com/167897/cyber-crime/a-new-variant-of-cicada-ransomware-targets-vmware-esxi-systems.html
+
+Title: An air transport security system flaw allowed to bypass airport security screenings
+Description: A vulnerability in an air transport security system allowed unauthorized individuals to bypass airport security screenings. The Known Crewmember (KCM) and Cockpit Access Security System (CASS) programs are two transport security systems that pilots, flight at…
+URL: https://securityaffairs.com/167862/hacking/air-transport-security-systems-critical-flaw.html
+
+Title: Security Affairs newsletter Round 487 by Pierluigi Paganini – INTERNATIONAL EDITION
+Description: A new round of the weekly SecurityAffairs newsletter arrived! Every week the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including the international press. North Korea-li…
+URL: https://securityaffairs.com/167865/breaking-news/security-affairs-newsletter-round-487-by-pierluigi-paganini-international-edition.html
+
+Title: SECURITY AFFAIRS MALWARE NEWSLETTER – ROUND 9
+Description: Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape. Unveiling “sedexp”: A Stealthy Linux Malware Exploiting udev Rules Malware infiltrates Pidgin messenger’s official plugin re…
+URL: https://securityaffairs.com/167872/malware/security-affairs-malware-newsletter-round-9.html
+
+Title: Lockbit gang claims the attack on the Toronto District School Board (TDSB)
+Description: The Toronto District School Board (TDSB) confirmed that student information was compromised in the June Lockbit ransomware attack. The Toronto District School Board (TDSB) confirmed that students’ information was compromised following a ransomware attack that…
+URL: https://securityaffairs.com/167934/cyber-crime/lockbit-ransomware-toronto-district-school-board.html
+
+Title: Head Mare hacktivist group targets Russia and Belarus
+Description: A group of hacktivist known as Head Mare took advantage of the recent CVE-2023-38831 WinRAR flaw in attacks against organizations in Russia and Belarus. Kaspersky researchers reported that a hacktivist group known as Head Mare exploited recently disclosed Win…
+URL: https://securityaffairs.com/168030/hacktivism/head-mare-hacktivist-group-winrar.html
+
+Title: Progress Software fixed a maximum severity flaw in LoadMaster
+Description: Progress Software released an emergency to address a maximum severity vulnerability in its LoadMaster products. Progress Software released an emergency fix for a critical vulnerability, tracked as CVE-2024-7591, that affects its LoadMaster and LoadMaster Mult…
+URL: https://securityaffairs.com/168192/security/progress-software-emergency-loadmaster-flaw.html
+
+Title: TIDRONE APT targets drone manufacturers in Taiwan
+Description: A previously undocumented threat actor tracked TIDRONE targets organizations in military and satellite industries in Taiwan. Trend Micro spotted an allegedly China-linked threat actor, tracked TIDRONE, targeting drone manufacturers in Taiwan. The group, which…
+URL: https://securityaffairs.com/168210/apt/tidrone-targets-organizations-taiwan.html
+
+Title: Predator spyware operation is back with a new infrastructure
+Description: Researchers warn of a fresh cluster of activity associated with the Predator spyware using a new infrastructure, following the U.S. sanctions against the Intellexa Consortium. Recorded Future researchers warn that the Predator spyware has resurfaced with fres…
+URL: https://securityaffairs.com/168222/intelligence/predator-spyware-new-infrastructure.html
+
+Title: Crooks took control of a cow milking robot causing the death of a cow
+Description: Crooks took control of a cow milking robot and demanded a ransom from a farmer who refused to pay it, resulting in the death of a cow. An extortion attempt had a tragic outcome, cybercriminals took control of a cow milking robot and demanded a ransom from a f…
+URL: https://securityaffairs.com/166839/cyber-crime/cow-milking-robot-hacked.html
+
+Title: Foreign nation-state actors hacked Donald Trump’s campaign
+Description: Donald Trump’s campaign reported that its emails were hacked by “foreign sources hostile to the United States.” Donald Trump’s presidential campaign announced it was hacked, a spokesman attributes the attack to foreign sources hostile to the United States. Th…
+URL: https://securityaffairs.com/166895/cyber-warfare-2/donald-trumps-campaign-hacked.html
+
+Title: SECURITY AFFAIRS MALWARE NEWSLETTER – ROUND 6
+Description: Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape. Surge in Magniber ransomware attacks impact home users worldwide BlankBot – a new Android banking trojan with screen recordi…
+URL: https://securityaffairs.com/166890/malware/security-affairs-malware-newsletter-round-6.html
+
+Title: Security Affairs newsletter Round 484 by Pierluigi Paganini – INTERNATIONAL EDITION
+Description: A new round of the weekly SecurityAffairs newsletter arrived! Every week the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including the international press. Is the INC ran…
+URL: https://securityaffairs.com/166884/breaking-news/security-affairs-newsletter-round-484-by-pierluigi-paganini-international-edition.html
+
+Title: Black Basta ransomware gang linked to a SystemBC malware campaign
+Description: Experts linked an ongoing social engineering campaign, aimed at deploying the malware SystemBC, to the Black Basta ransomware group. Rapid7 researchers uncovered a new social engineering campaign distributing the SystemBC dropper to the Black Basta ransomware…
+URL: https://securityaffairs.com/167079/cyber-crime/black-basta-ransomware-systembc-campaign.html
+
+Title: Elon Musk claims that a DDoS attack caused problems with the livestream interview with Donald Trump
+Description: Elon Musk claims that the livestream interview with Donald Trump on the X social media platform was impacted by a cyberattack. Elon Musk claims that a massive DDoS attack caused problems with the announced interview with Donald Trump on the X platform Monday …
+URL: https://securityaffairs.com/166982/hacking/elon-musk-donald-trump-interview-ddos.html
+
+Title: Microsoft Zero-Day CVE-2024-38193 was exploited by North Korea-linked Lazarus APT
+Description: Microsoft addressed a zero-day vulnerability actively exploited by the North-Korea-linked Lazarus APT group. Microsoft has addressed a zero-day vulnerability, tracked as CVE-2024-38193 (CVSS score: 7.8), which has been exploited by the North Korea-linked Laza…
+URL: https://securityaffairs.com/167246/apt/microsoft-zero-day-cve-2024-38193-lazarus.html
+
+Title: CISA adds SolarWinds Web Help Desk bug to its Known Exploited Vulnerabilities catalog
+Description: U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds a SolarWinds Web Help Desk bug to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added SolarWinds Web Help Desk deserialization of…
+URL: https://securityaffairs.com/167157/security/cisa-adds-solarwinds-web-help-desk-bug-to-its-known-exploited-vulnerabilities-catalog.html
+
+Title: Microsoft urges customers to fix zero-click Windows RCE in the TCP/IP stack
+Description: Microsoft addressed a critical zero-click Windows remote code execution (RCE) in the TCP/IP stack that impacts all systems with IPv6 enabled. Microsoft urges customers to fix a critical TCP/IP remote code execution (RCE) flaw, tracked as CVE-2024-38063 (CVSS …
+URL: https://securityaffairs.com/167117/hacking/windows-rce-tcp-ip.html
+
+Title: Google addressed the tenth actively exploited Chrome zero-day this year
+Description: Google released emergency security updates to fix the tenth actively exploited Chrome zero-day vulnerability this year. Google released a security update to address a new Chrome zero-day vulnerability, tracked as CVE-2024-7965 (CVSS score 8.8), that is active…
+URL: https://securityaffairs.com/167631/hacking/10th-google-chrome-zero-day-this-year.html
+
+Title: The Dutch Data Protection Authority (DPA) has fined Uber a record €290M
+Description: The Dutch Data Protection Authority (DPA) has fined Uber a record €290M for violating the EU data protection regulation while sending sensitive driver data to the U.S. The Dutch Data Protection Authority (DPA) has fined Uber €290 million ($324 million) for al…
+URL: https://securityaffairs.com/167606/digital-id/dutch-dpa-fined-uber-e290m.html
+
+Title: China-linked APT Velvet Ant exploited zero-day to compromise Cisco switches
+Description: China-linked APT group Velvet Ant exploited a recently disclosed zero-day in Cisco switches to take over the network appliance. Researchers at cybersecurity firm Sygnia reported that the China-linked APT group Velvet Ant has exploited the recently disclosed z…
+URL: https://securityaffairs.com/167423/apt/china-velvet-ant-zero-day-cisco-switches.html
+
+Title: Google disrupted hacking campaigns carried out by Iran-linked APT42
+Description: Google disrupted a hacking campaign carried out by the Iran-linked APT group APT42 targeting the US presidential election. Google announced that it disrupted a hacking campaign carried out by Iran-linked group APT42 (Calanque, UNC788) that targeted the person…
+URL: https://securityaffairs.com/167095/security/google-disrupted-apt48-hacking-campaign.html
+
+Title: CISA adds Jenkins Command Line Interface (CLI) bug to its Known Exploited Vulnerabilities catalog
+Description: U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds a Jenkins Command Line Interface (CLI) bug to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added a Jenkins Command Line Interfac…
+URL: https://securityaffairs.com/167267/hacking/cisa-adds-jenkins-command-line-interface-cli-bug-to-its-known-exploited-vulnerabilities-catalog.html
+
+Title: The Mad Liberator ransomware group uses social-engineering techniques
+Description: New cybercrime group Mad Liberator is targeting AnyDesk users and runs a fake Microsoft Windows update screen to conceal data exfiltrating. The Sophos X-Ops Incident Response team warned that a new ransomware group called Mad Liberator is exploiting the remot…
+URL: https://securityaffairs.com/167231/malware/mad-liberator-ransomware-social-engineering.html
+
+Title: Cisco addressed a high-severity flaw in NX-OS software
+Description: Cisco addressed multiple vulnerabilities impacting NX-OS software, including a high-severity flaw in the DHCPv6 relay agent. Cisco released security updates for NX-OS software that address multiple vulnerabilities. The most severe of the vulnerabilities fixed…
+URL: https://securityaffairs.com/167785/security/cisco-high-severity-flaw-nx-os.html
+
+Title: U.S. CISA adds Dahua IP Camera, Linux Kernel and Microsoft Exchange Server bugs to its Known Exploited Vulnerabilities catalog
+Description: U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Dahua IP Camera, Linux Kernel and Microsoft Exchange Server bugs to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added the follo…
+URL: https://securityaffairs.com/167414/uncategorized/u-s-cisa-dahua-ip-camera-linux-kernel-microsoft-exchange-server-bugs-its-known-exploited-vulnerabilities-catalog.html
+
+Title: Toyota disclosed a data breach after ZeroSevenGroup leaked stolen data on a cybercrime forum
+Description: Toyota has confirmed a data breach after a threat actor leaked 240GB of data stolen from its infrastructure on a cybercrime forum. Toyota disclosed a data breach after a threat actor leaked an archive of 240GB of data stolen from its systems on a cybercrime f…
+URL: https://securityaffairs.com/167274/uncategorized/zerosevengroup-toyota-data-breach.html
+
+Title: GitHub fixed a new critical flaw in the GitHub Enterprise Server
+Description: GitHub addressed three vulnerabilities in its GitHub Enterprise Server product, including a critical authentication flaw. GitHub addressed three security vulnerabilities impacting the GitHub Enterprise Server (GHES), including a critical flaw tracked as CVE-2…
+URL: https://securityaffairs.com/167387/security/github-enterprise-server-critical-flaw.html
+
+Title: Google addressed the ninth actively exploited Chrome zero-day this year
+Description: Google released emergency security updates to fix the ninth actively exploited Chrome zero-day vulnerability this year. ​​Google released an emergency security update to address a Chrome zero-day vulnerability, tracked as CVE-2024-7971, that is actively explo…
+URL: https://securityaffairs.com/167403/hacking/9th-chrome-zero-day-2024-html.html
+
+Title: Pro-Russia group Vermin targets Ukraine with a new malware family
+Description: The Computer Emergency Response Team of Ukraine (CERT-UA) warned of new phishing attacks, carried out by the Vermin group, distributing a malware. The Computer Emergency Response Team of Ukraine (CERT-UA) has warned of a new phishing campaign conducted by the…
+URL: https://securityaffairs.com/167327/apt/cer-ua-vermin-phishing-campaign.html
+
+Title: SolarWinds fixed a hardcoded credential issue in Web Help Desk
+Description: SolarWinds fixed a hardcoded credential flaw in its Web Help Desk (WHD) software that could allow attackers to gain unauthorized access to vulnerable instances. SolarWinds has addressed a new security flaw, tracked as CVE-2024-28987 (CVSS score of 9.1) in its…
+URL: https://securityaffairs.com/167408/hacking/solarwinds-hardcoded-credential-flaw-web-help-desk.html
+
+Title: Fortra fixed two severe issues in FileCatalyst Workflow, including a critical flaw
+Description: Cybersecurity and automation company Fortra addressed two vulnerabilities in FileCatalyst Workflow software, including a critical-severity flaw. Cybersecurity and automation company Fortra released patches for two vulnerabilities in FileCatalyst Workflow. Onc…
+URL: https://securityaffairs.com/167838/security/fortra-filecatalyst-critical-workflow.html
+
+Title: North Korea-linked APT Citrine Sleet exploit Chrome zero-day to deliver FudModule rootkit
+Description: North Korea-linked APT exploited the recently patched Google Chrome zero-day CVE-2024-7971 to deploy the FudModule rootkit. North Korea-linked group Citrine Sleet (aka AppleJeus, Labyrinth Chollima, UNC4736, Hidden Cobra) have exploited the recently patched G…
+URL: https://securityaffairs.com/167848/breaking-news/north-korea-linked-apt-exploited-chrome-zero-day-cve-2024-7971.html
+
+Title: U.S. CISA adds Dahua IP Camera, Linux Kernel and Microsoft Exchange Server bugs to its Known Exploited Vulnerabilities catalog
+Description: U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Dahua IP Camera, Linux Kernel and Microsoft Exchange Server bugs to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added the follo…
+URL: https://securityaffairs.com/167414/hacking/u-s-cisa-dahua-ip-camera-linux-kernel-microsoft-exchange-server-bugs-its-known-exploited-vulnerabilities-catalog.html
+
+Title: Security Affairs newsletter Round 486 by Pierluigi Paganini – INTERNATIONAL EDITION
+Description: A new round of the weekly SecurityAffairs newsletter arrived! Every week the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including the international press. Hackers can ta…
+URL: https://securityaffairs.com/167519/breaking-news/security-affairs-newsletter-round-486-by-pierluigi-paganini-international-edition.html
+
+Title: U.S. CISA adds Versa Director bug to its Known Exploited Vulnerabilities catalog
+Description: U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Versa Director bug to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Versa Director Dangerous File Type Upload Vulnerability…
+URL: https://securityaffairs.com/167534/hacking/cisa-adds-versa-director-bug-known-exploited-vulnerabilities-catalog.html
+
+Title: Critical flaw in WPML WordPress plugin impacts 1M websites
+Description: A critical flaw in the WPML WordPress plugin, which is installed on 1 million websites, could allow potential compromise of affected sites. The WPML Multilingual CMS Plugin for WordPress is installed on over 1 million sites. An authenticated (Contributor+) Re…
+URL: https://securityaffairs.com/167673/hacking/wpml-wordpress-plugin-rce-1m-websites.html
+
+Title: U.S. CISA adds Google Chromium V8 bug to its Known Exploited Vulnerabilities catalog
+Description: U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Google Chromium V8 bug to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Google Chromium V8 Inappropriate Implementation Vul…
+URL: https://securityaffairs.com/167722/security/u-s-cisa-adds-google-chromium-v8-bug-known-exploited-vulnerabilities-catalog.html
+
+Title: Discontinued D-Link DIR-846 routers are affected by code execution flaws. Replace them!
+Description: D-Link warns of multiple remote code execution vulnerabilities impacting its discontinued DIR-846 router series. Networking hardware vendor D-Link wars of multiple remote code execution (RCE) vulnerabilities in its discontinued DIR-846 router model. The vulne…
+URL: https://securityaffairs.com/168041/security/d-link-dir-846-routers-code-execution-flaws.html
+
+Title: North Korea-linked APT used a new RAT called MoonPeak
+Description: North Korea-linked APT Kimsuky is likely behind a new remote access trojan called MoonPeak used in a recent campaign spotted by Cisco Talos. Cisco Talos researchers uncovered the infrastructure used by the North Korea-linked APT group tracked as UAT-5394, whi…
+URL: https://securityaffairs.com/167340/malware/north-korea-apt-moonpeaknorth.html
+
+Title: Ransomware payments rose from $449.1 million to $459.8 million
+Description: Blockchain analysis firm Chainalysis revealed that ransomware payments rose by approximately 2%, from $449.1 million to $459.8 million. Blockchain analysis firm Chainalysis revealed that while overall on-chain illicit activity has decreased by nearly 20% year…
+URL: https://securityaffairs.com/167305/malware/ransomware-payments-rose.html
+
+Title: Russia-linked GRU Unit 29155 targeted critical infrastructure globally
+Description: The United States and its allies state that Russia-linked threat actors operating under the GRU are behind global critical infrastructure attacks. The FBI, CISA, and NSA linked threat actors from Russia’s GRU Unit 29155 to global cyber operations since at lea…
+URL: https://securityaffairs.com/168095/cyber-warfare-2/russia-gru-unit-29155-critical-infrastructure.html
+
+Title: A flaw in WordPress LiteSpeed Cache Plugin allows account takeover
+Description: A critical flaw in the LiteSpeed Cache plugin for WordPress could allow unauthenticated users to take control of arbitrary accounts. The LiteSpeed Cache plugin is a popular caching plugin for WordPress that accounts for over 5 million active installations. Th…
+URL: https://securityaffairs.com/168145/security/litespeed-cache-plugin-wordpress-flaw.html
+
+Title: Progress Software fixed a maximum severity flaw in LoadMaster
+Description: Progress Software released an emergency to address a maximum severity vulnerability in its LoadMaster products. Progress Software released an emergency fix for a critical vulnerability, tracked as CVE-2024-7591, that affects its LoadMaster and LoadMaster Mult…
+URL: https://securityaffairs.com/168192/uncategorized/progress-software-emergency-loadmaster-flaw.html
+
+Title: Experts demonstrated how to bypass WhatsApp View Once feature
+Description: Users are exploiting a privacy flaw in WhatsApp to bypass the app’s “View once” feature, allowing them to re-view messages. The ‘View Once‘ feature in WhatsApp allows users to send photos, videos, and voice messages that can only be viewed once by the recipie…
+URL: https://securityaffairs.com/168242/hacking/whatsapp-view-once-privacy-feature.html
+
+Title: Sonos smart speakers flaw allowed to eavesdrop on users
+Description: NCC Group discovered vulnerabilities in Sonos smart speakers, including a flaw that could have allowed to eavesdrop on users. Researchers from NCC Group have discovered multiple vulnerabilities in Sonos smart speakers, including a flaw, tracked as CVE-2023-50…
+URL: https://securityaffairs.com/166823/hacking/sonos-smart-speakers-flaw.html
+
+Title: CERT-UA warns of a phishing campaign targeting government entities
+Description: CERT-UA warned that Russia-linked actor is impersonating the Security Service of Ukraine (SSU) in a new phishing campaign to distribute malware. The Computer Emergency Response Team of Ukraine (CERT-UA) has warned of a new phishing campaign targeting organiza…
+URL: https://securityaffairs.com/166970/apt/cert-ua-warns-security-service-of-ukraine-campaign.html
+
+Title: A massive cyber attack hit Central Bank of Iran and other Iranian banks
+Description: Iranian news outlet reported that a major cyber attack targeted the Central Bank of Iran (CBI) and several other banks causing disruptions. Iran International reported that a massive cyber attack disrupted operations of the Central Bank of Iran (CBI) and seve…
+URL: https://securityaffairs.com/167066/hacking/cyberattack-central-bank-of-iran.html
+
+Title: Russian national sentenced to 40 months for selling stolen data on the dark web
+Description: A Russian national was sentenced to over three years in prison for selling stolen information and credentials on a dark web marketplace. The 27-year-old Russian national Georgy Kavzharadze (also known as “George,” “TeRorPP,” “Torqovec,” and “PlutuSS”) has bee…
+URL: https://securityaffairs.com/167146/deep-web/russian-national-sentenced-40-months.html
+
+Title: SECURITY AFFAIRS MALWARE NEWSLETTER – ROUND 7
+Description: Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape. Deciphering the Brain Cipher Ransomware   Ideal typosquat ‘solana-py’ steals your crypto wallet keys   Ransomware attackers …
+URL: https://securityaffairs.com/167213/malware/security-affairs-malware-newsletter-round-7.html
+
+Title: Large-scale extortion campaign targets publicly accessible environment variable files (.env)
+Description: A large-scale extortion campaign compromised multiple organizations by exploiting publicly accessible environment variable files (.env). Palo Alto Unit 42 researchers uncovered a large-scale extortion campaign that successfully compromised and extorted multip…
+URL: https://securityaffairs.com/167180/cyber-crime/extortion-campaign-environment-variable-files.html
+
+Title: A backdoor in millions of Shanghai Fudan Microelectronics RFID cards allows cloning
+Description: A flaw in millions of RFID cards manufactured by Shanghai Fudan Microelectronics allows these contactless cards to be cloned instantly. Researchers from security firm Quarkslab discovered a backdoor in millions of RFID cards manufactured by the Chinese chip m…
+URL: https://securityaffairs.com/167321/hacking/shanghai-fudan-microelectronics-rfid-cards-backdoor.html
+
+Title: Member of cybercrime group Karakurt charged in the US
+Description: The Russian national Deniss Zolotarjovs has been charged in a U.S. court for his role in the Karakurt cybercrime gang. Deniss Zolotarjovs (33), a Russian cybercriminal, has been charged in a U.S. court for his role in the Russian Karakurt cybercrime gang. The…
+URL: https://securityaffairs.com/167466/uncategorized/karakurt-cybercrime-gang-member-arrested.html
+
+Title: SECURITY AFFAIRS MALWARE NEWSLETTER – ROUND 8
+Description: Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape. Meet UULoader: An Emerging and Evasive Malicious Installer BlindEagle flying high in Latin America   Finding Malware: Unveil…
+URL: https://securityaffairs.com/167525/malware/security-affairs-malware-newsletter-round-8.html
+
+Title: Hackers can take over Ecovacs home robots to spy on their owners
+Description: Recently, researchers warned vacuum and lawn mower robots made by Ecovacs could be hacked to spy on their owners, the company will fix it. During the recent Def Con hacking conference, security researchers Dennis Giese and Braelynn explained that attackers ca…
+URL: https://securityaffairs.com/167508/hacking/researchers-hacked-ecovacs-devices.html
+
+Title: SonicWall addressed an improper access control issue in its firewalls
+Description: SonicWall addressed a critical flaw in its firewalls that could allow attackers to achieve unauthorized access to the devices. SonicWall has released security updates to address a critical vulnerability, tracked as CVE-2024-40766 (CVSS score: 9.3), in its fir…
+URL: https://securityaffairs.com/167595/security/sonicwall-sonicos-cve-2024-40766.html
+
+Title: A cyberattack hit US oil giant Halliburton
+Description: US oil giant Halliburton announced that it was hit by a cyberattack that is affecting operations at its Houston, Texas offices. Halliburton, a major U.S. oil company, announced that a cyberattack hit its IT infrastructure, particularly impacting operations at…
+URL: https://securityaffairs.com/167435/hacking/halliburton-cyberattack.html
+
+Title: Earth Lusca adds multiplatform malware KTLVdoor to its arsenal
+Description: The Chinese-speaking threat actor Earth Lusca used the new backdoor KTLVdoor in an attack against a trading company in China. Trend Micro Researchers spotted the Chinese-speaking threat actor Earth Lusca using a new multiplatform backdoor called KTLVdoor. The…
+URL: https://securityaffairs.com/168078/malware/earth-lusca-malware-ktlvdoor.html
+
+Title: Veeam fixed a critical flaw in Veeam Backup & Replication software
+Description: Veeam addressed 18 high and critical severity flaws in Veeam Backup & Replication, Service Provider Console, and One. Veeam security updates to address multiple vulnerabilities impacting its products, the company fixed 18 high and critical severity flaws in V…
+URL: https://securityaffairs.com/168088/security/veeam-backup-replication-cve-2024-40711.html
+
+Title: Is Russian group APT28 behind the cyber attack on the German air traffic control agency (DFS)?
+Description: A cyber attack hit the German air traffic control agency (DFS) disrupting its operations, experts attribute it to Russia-linked group APT28. A cyber attack targeted the German Air Traffic Control Agency (DFS), as reported by Spiegel and European Truth. DFS, b…
+URL: https://securityaffairs.com/168070/apt/apt28-cyber-attack-german-air-traffic-control-agency-dfs.html
+
+Title: South Korea-linked group APT-C-60 exploited a WPS Office zero-day
+Description: South Korea-linked group APT-C-60 exploited a zero-day in the Windows version of WPS Office to target East Asian countries. South Korea-linked group APT-C-60 exploited a zero-day, tracked as CVE⁠-⁠2024⁠-⁠7262, in the Windows version of WPS Office to deploy th…
+URL: https://securityaffairs.com/167825/hacking/apt-c-60-wps-office-zero-day.html
+
+Title: Telegram CEO Pavel Durov charged in France for facilitating criminal activities
+Description: French prosecutors charged CEO Telegram Pavel Durov with facilitating various criminal activities on the messaging platform. French prosecutors have formally charged Telegram CEO Pavel Durov with facilitating various criminal activities on the platform, inclu…
+URL: https://securityaffairs.com/167739/security/pavel-durov-charged-with-various-criminal-activities.html
+
+Title: Corona Mirai botnet spreads via AVTECH CCTV zero-day
+Description: An instance of the Corona Mirai botnet spreads via AVTECH CCTV zero-day and multiple previously known vulnerabilities. Akamai’s Security Intelligence and Response Team (SIRT) has detected a botnet campaign exploiting multiple previously known vulnerabilities …
+URL: https://securityaffairs.com/167764/malware/corona-mirai-botnet-avtech-cctv-zero-day.html
+
+Title: Russia-linked APT29 reused iOS and Chrome exploits previously developed by NSO Group and Intellexa
+Description: Russia-linked APT29 group was spotted reusing iOS and Chrome exploits previously developed by surveillance firms NSO Group and Intellexa. Google TAG (Threat Analysis Group) researchers observed the Russia-linked group APT29 (aka SVR group, BlueBravo, Cozy Bea…
+URL: https://securityaffairs.com/167797/apt/apt29-nso-group-and-intellexa-mobile-exploits.html
+
+Title: VMware fixed a code execution flaw in Fusion hypervisor
+Description: VMware released a patch to address a high-severity code execution flaw in its Fusion hypervisor, users are urged to apply it. VMware addressed a high-severity code execution vulnerability, tracked as CVE-2024-38811 (CVSS 8.8/10), in its Fusion hypervisor. The…
+URL: https://securityaffairs.com/168009/security/vmware-fusion-cve-2024-38811.html
+
+Title: Google fixed actively exploited Android flaw CVE-2024-32896
+Description: Google addressed a security vulnerability in its Android operating system that is actively exploited in attacks in the wild. Google addressed a high-severity vulnerability, tracked as CVE-2024-32896 (CVSS score: 7.8), in its Android operating system that is u…
+URL: https://securityaffairs.com/168047/mobile-2/google-fixed-actively-exploited-android-flaw-cve-2024-32896.html
+
+Title: SECURITY AFFAIRS MALWARE NEWSLETTER – ROUND 10
+Description: Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape. BlackSuit Ransomware Dissecting the Cicada       Year-Long Campaign of Malicious npm Packages Targeting Roblox Users   Rocin…
+URL: https://securityaffairs.com/168168/malware/security-affairs-malware-newsletter-round-10.html
+
