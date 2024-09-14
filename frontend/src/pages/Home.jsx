@@ -25,7 +25,7 @@ const Home = () => {
 
     const [step, setStep] = useState([]);
 
-    const options = ['legal risk', 'loan risk', 'operational risk', 'other risks'];
+    const options = ['legal risk', 'loan risk', 'operation risk', 'other risks'];
 
     const getNewsData = async () => {
         try {
@@ -42,7 +42,7 @@ const Home = () => {
                     setLoanRisk(news.article);
                 } else if (news.riskCategory === 'legal risk') {
                     setLegalRisk(news.article);
-                } else if (news.riskCategory === 'operational risk') {
+                } else if (news.riskCategory === 'operation risk') {
                     setOperationalRisk(news.article);
                 } else {
                     setOthersRisk(news.article);

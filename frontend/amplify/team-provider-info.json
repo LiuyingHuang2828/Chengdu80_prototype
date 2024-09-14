@@ -15,7 +15,7 @@
       "function": {
         "fetchNewsLambda": {
           "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
-          "s3Key": "amplify-builds/fetchNewsLambda-56742f72373870484159-build.zip"
+          "s3Key": "amplify-builds/fetchNewsLambda-7757446b343768333264-build.zip"
         },
         "riskSummaryLambda": {
           "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",

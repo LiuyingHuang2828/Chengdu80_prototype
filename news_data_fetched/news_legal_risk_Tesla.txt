@@ -2,6 +2,10 @@ Title: Brazil judge orders shutdown of X social network; Elon Musk furious
 Description: A Supreme Court judge on Friday ordered the suspension of Elon Musk's X social media network in Brazil after the billionaire failed to comply with an order to name a new legal representative for the company. On Wednesday, Moraes told Musk "to appoint the comp…
 URL: https://economictimes.indiatimes.com/news/international/world-news/brazil-judge-orders-shutdown-of-x-social-network-elon-musk-furious/articleshow/112938406.cms
 
+Title: A Uruguayan company teaches people how to turn regular cars into EVs
+Description: Organización Autolibre is teaching individuals and companies across 14 countries to retrofit vehicles. Critics worry about the process’s safety.
+URL: https://restofworld.org/2024/electric-vehicle-conversions-uruguay/
+
 Title: Super Micro Computer falls as short-seller Hindenburg Research accuses the AI darling of 'accounting manipulation'
 Description: Hindenburg said an investigation found "glaring red flags" even after the SEC charged the company with accounting violations in 2020.
 URL: https://markets.businessinsider.com/news/stocks/super-micro-computer-hindenburg-report-accounting-fraud-short-sell-stock-2024-8
@@ -10,6 +14,10 @@ Title: Elon Musk Brutally Roasted For “Juvenile” Comeback To Stephen King’
 Description: “Do people genuinely think this is funny or are they just part of the incredibly annoying Elon Musk fanboy group.”
 The post Elon Musk Brutally Roasted For “Juvenile” Comeback To Stephen King’s SpaceX Callout first appeared on Bored Panda.
 URL: https://www.boredpanda.com/elon-musk-roasted-for-ai-photo-insult-after-stephen-king-puts-spacex-on-blast/
+
+Title: International Expansion: The Challenges And Opportunities For Startups
+Description: In today's startup ecosystem, international expansion offers a powerful appeal.
+URL: https://www.forbes.com/councils/forbesbusinesscouncil/2024/09/12/international-expansion-the-challenges-and-opportunities-for-startups/
 
 Title: Brazil Awaits X Shutdown As Musk Dismisses Legal Order
 Description: Brazil was on Friday facing a shutdown of the social media platform X after billionaire Elon Musk refused an order by a Supreme Court judge to name a new legal representative for the company.
@@ -22,10 +30,6 @@ URL: http://electrek.co/2024/09/07/automakers-whine-about-e15b-fine-they-knew-th
 Title: Brazil awaits X shutdown as Musk dismisses legal order
 Description: Brazil was on Friday facing a shutdown of the social media platform X after billionaire Elon Musk refused an order by a Supreme Court judge to name a new legal representative for the company. Musk has been locked in a months-long feud with the judge, Alexandr…
 URL: https://japantoday.com/category/world/brazil-awaits-x-shutdown-as-musk-dismisses-legal-order
-
-Title: Brussels tried but FAILED to stop Elon Musk’s wildly popular interview with Donald Trump
-Description: The European Union has pressured X owner Elon Musk to cancel his interview with former U.S. President Donald Trump to no avail. EU Internal Market Commissioner Thierry Breton was the Brussels official responsible for the effort, doing so through an Aug. 12 le…
-URL: https://www.naturalnews.com/2024-08-13-brussels-failed-to-stop-musk-interview-trump.html
 
 Title: Forbes Daily: Market Winning Streaks Come As Recession Fears Ease
 Description: Tuesday's edition of Forbes Daily covers Nvidia leading stock market rally, SEC charges Carl Icahn, Musk a Cabinet contender, Sima Sistani leads WeightWatchers and more.
@@ -83,13 +87,13 @@ Title: SMCI STOCK BREAKING UPDATE: Super Micro Computer, Inc. has been Sued for 
 Description: Super Micro Computer investors that lost money on their investment are encouraged to contact BFA Law before the October 29, 2024 legal deadline.......
 URL: https://www.globenewswire.com/news-release/2024/09/03/2939482/0/en/SMCI-STOCK-BREAKING-UPDATE-Super-Micro-Computer-Inc-has-been-Sued-for-Securities-Fraud-Contact-BFA-Law-about-the-Lawsuit-if-You-Lost-Money-on-Your-Investment-Nasdaq-SMCI.html
 
+Title: SMCI LAWSUIT NEWS: A Class Action Lawsuit has been Filed Against Super Micro Computer, Inc. for Securities Fraud; Contact BFA Law before October 29 Legal Deadline (Nasdaq:SMCI)
+Description: Super Micro Computer investors that lost money on their investment are encouraged to contact BFA Law before the October 29, 2024 legal deadline.......
+URL: https://www.globenewswire.com/news-release/2024/09/11/2944339/0/en/SMCI-LAWSUIT-NEWS-A-Class-Action-Lawsuit-has-been-Filed-Against-Super-Micro-Computer-Inc-for-Securities-Fraud-Contact-BFA-Law-before-October-29-Legal-Deadline-Nasdaq-SMCI.html
+
 Title: SMCI FRAUD ALERT: Super Micro Computer, Inc. has been Sued for Securities Fraud – Contact BFA Law by October 29 if You Suffered Losses on Your Investment (Nasdaq:SMCI)
 Description: Super Micro Computer investors that lost money on their investment are encouraged to contact BFA Law before the October 29, 2024 legal deadline.......
 URL: https://www.globenewswire.com/news-release/2024/09/09/2943148/0/en/SMCI-FRAUD-ALERT-Super-Micro-Computer-Inc-has-been-Sued-for-Securities-Fraud-Contact-BFA-Law-by-October-29-if-You-Suffered-Losses-on-Your-Investment-Nasdaq-SMCI.html
-
-Title: Sunrun Inc. legal officer sells over $460k in company stock
-Description: Sunrun Inc. legal officer sells over $460k in company stock
-URL: https://www.investing.com/news/company-news/sunrun-inc-legal-officer-sells-over-460k-in-company-stock-93CH-3565411
 
 Title: Brazil's Supreme Court Orders Suspension Of Elon Musk's X Amid Row
 Description: A Supreme Court judge on Friday ordered the suspension of Elon Musk's X social media network in Brazil for failing to comply with an order to name a new legal representative for the company, a source at the court told AFP.
@@ -122,6 +126,14 @@ URL: https://www.ndtv.com/world-news/brazil-block-on-elon-musks-x-comes-into-eff
 Title: Elon Musk Slams Brazil "Pseudo-Judge" After Order To Suspend X
 Description: A Supreme Court judge on Friday ordered the suspension of Elon Musk's X social media network in Brazil, after months-long standoff over disinformation in South America's largest nation.
 URL: https://www.ndtv.com/world-news/elon-musk-slams-brazil-pseudo-judge-after-order-to-suspend-x-6456714
+
+Title: The Atrisco Solar & Storage Project Has Commenced Commercial Operations
+Description: TEL AVIV, Israel, Sept. 11, 2024 (GLOBE NEWSWIRE) -- Enlight Renewable Energy (“Enlight”, "the Company”, NASDAQ: ENLT, TASE: ENLT.TA), a leading renewable energy platform, announces the initial start of commercial operations at its Atrisco Solar & Energy Stor…
+URL: https://www.globenewswire.com/news-release/2024/09/11/2944317/0/en/The-Atrisco-Solar-Storage-Project-Has-Commenced-Commercial-Operations.html
+
+Title: The Atrisco Solar & Storage Project Has Commenced Commercial Operations
+Description: The Atrisco Solar & Storage Project Has Commenced Commercial Operations
+URL: https://www.investing.com/news/press-releases/the-atrisco-solar--storage-project-has-commenced-commercial-operations-93CH-3611086
 
 Title: Explained: Why Brazil's Supreme Court banned Elon Musk's X platform
 Description: Brazil's Supreme Court has banned the social media platform X (formerly Twitter) after Elon Musk refused to comply with orders to block accounts spreading 'fake news'.
@@ -158,11 +170,11 @@ URL: https://seclists.org/risks/2024/q3/9
 
 Title: Dave Vellante’s Breaking Analysis: The complete collection
 Description: Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…
-URL: https://siliconangle.com/2024/08/23/dave-vellantes-breaking-analysis-complete-collection/
+URL: https://siliconangle.com/2024/09/06/dave-vellantes-breaking-analysis-complete-collection/
 
 Title: Dave Vellante’s Breaking Analysis: The complete collection
 Description: Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…
-URL: https://siliconangle.com/2024/09/06/dave-vellantes-breaking-analysis-complete-collection/
+URL: https://siliconangle.com/2024/08/23/dave-vellantes-breaking-analysis-complete-collection/
 
 Title: Dave Vellante’s Breaking Analysis: The complete collection
 Description: Breaking Analysis is a weekly editorial program combining knowledge from SiliconANGLE’s theCUBE with spending data from Enterprise Technology Research. Branded as theCUBE Insights, Powered by ETR, the program is our opportunity to share independent, unfiltere…
