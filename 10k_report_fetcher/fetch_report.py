@@ -37,4 +37,12 @@ class ReportFetcher:
 
         print(f"Report saved to {file_path}")
 
+
+    def fetch_and_summarise_cv(self, item_title = "Risk Factors", item_suc_title = "Unresolved Staff Comments"):
+        """
+        Fetches full report item, and generate Corporate Vulnerability summary for each risk type using DeepSeek-Chat
+        """
+        report = self.fetch_report(item_title, item_suc_title)
+        return summarise_cv_by_risk_type(extract_cv_by_chunks(report))
+
         

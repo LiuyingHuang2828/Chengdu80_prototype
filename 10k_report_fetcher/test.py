@@ -19,4 +19,6 @@ if company_ticker == "":
 fetcher = ReportFetcher(company_ticker)
 
 # Fetch and save news articles for
-fetcher.fetch_and_save_report("Risk Factors", "Unresolved Staff Comments", output_dir='../report_data_fetched')
+# fetcher.fetch_and_save_report("Risk Factors", "Unresolved Staff Comments", output_dir='../report_data_fetched')
+
+# fetcher.fetch_and_summarise_cv()

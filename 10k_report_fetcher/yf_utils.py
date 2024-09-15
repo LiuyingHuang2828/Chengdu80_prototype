@@ -5,6 +5,15 @@ from lxml import etree
 import requests
 import os
 import re
+import transformers
+from openai import OpenAI
+from dotenv import load_dotenv
+import dask.bag as db
+from langchain_openai import OpenAI
+from langchain.text_splitter import NLTKTextSplitter
+
+load_dotenv()
+api_key = os.getenv('DEEPSEEK_API_KEY')  # Deepseek API key
 
 def search_ticker_exact(dataframe, search_term):
     mask = (
@@ -57,3 +66,56 @@ def get_item_content_url(url, item_title, item_suc_title):
     return spans_to_text(spans)
 
 
+
+def chunk_text_nltk(text):
+    text_splitter = NLTKTextSplitter()
+    docs = text_splitter.split_text(text)
+    return docs
+
+def query_deepseek(message, api_key):
+    base_url="https://api.deepseek.com"
+    client = OpenAI(api_key=api_key, base_url=base_url)
+
+    # results = []
+    response = client.chat.completions.create(
+    model="deepseek-chat",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant expertise in corporate risk analysis."},
+        {"role": "user", "content": message},
+    ],
+    stream=False
+    )
+    result = response.choices[0].message.content
+    # print(result)
+    return result
+
+def deepseek_by_chunks(chunks):
+    b = db.from_sequence(chunks, npartitions=len(chunks))  # Adjust npartitions depending on your data size and available cores
+    processed_bag = b.map(lambda x: query_deepseek(x, api_key))
+    processed_sentences = processed_bag.compute() 
+    print(f"reduced text from {len(''.join(chunks))} to {len(''.join(processed_sentences))} characters")
+    return processed_sentences
+
+# cv is short for corporate vulnerabilities
+# takes about 1-2 minutes to run
+def extract_cv_by_chunks(text):
+    print("Corporate Vulnerabilities Extraction in Progress ...")
+    sentences = chunk_text_nltk(text)
+    prompt = "You are given a portion of the corporate's 10-K Anual Report of Risk Factors section. Please extract the key corporate vulnerabilities described which could be useful for future risk analysis concisely and accurately. Only output the extraction result. Here is the report segment: \n"
+    messages = [prompt + sentence for sentence in sentences]
+    return "".join(deepseek_by_chunks(messages))
+
+# takes about 1-2 minutes to run
+def summarise_cv_by_risk_type(processed_text):
+    print("Summarising Corporate Vulnerabilities by Risk Type ...")
+    risk_types = ["Operational Risk", "Legal Risk", "Loan Risk", "Other Risk besides operational, legal, and loan"]
+    prompts = [f"You are given a corporate vulnerabilities description. Please summarise the most relevant vulnerabilities for future risk analysis on **{risk_type}**. Only output the extraction result. Here is the report: \n" for risk_type in risk_types]
+    messages = [prompt + processed_text for prompt in prompts]
+    # processed_messages = deepseek_by_chunks(messages)
+    processed_messages = list(map(lambda x: query_deepseek(x, api_key), messages))
+
+    result_dict = {}
+    for i, risk_type in enumerate(risk_types):
+        result_dict[risk_type] = processed_messages[i]
+    print("Summarising Corporate Vulnerabilities by Risk Type Completed")
+    return result_dict
