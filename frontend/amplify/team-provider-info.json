@@ -19,17 +19,22 @@
         },
         "riskSummaryLambda": {
           "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
-          "s3Key": "amplify-builds/riskSummaryLambda-752f695a754871706358-build.zip"
+          "s3Key": "amplify-builds/riskSummaryLambda-423643624e3663737370-build.zip"
         },
         "mainSummaryLambda": {
           "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
           "s3Key": "amplify-builds/mainSummaryLambda-4646334b336144566259-build.zip"
+        },
+        "stockStreamingLambda": {
+          "deploymentBucketName": "amplify-chengdu80proto-dev-2442c-deployment",
+          "s3Key": "amplify-builds/stockStreamingLambda-535250784a6951647344-build.zip"
         }
       },
       "api": {
         "fetchNewsApi": {},
         "riskSummaryApi": {},
-        "mainSummaryApi": {}
+        "mainSummaryApi": {},
+        "stockStreamingApi": {}
       },
       "storage": {
         "chengdu80NewsDynamo": {},

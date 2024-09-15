@@ -15,6 +15,11 @@
       "name": "mainSummaryApi",
       "endpoint": "https://c4tp8kygqk.execute-api.ap-southeast-1.amazonaws.com/dev",
       "region": "ap-southeast-1"
+    },
+    {
+      "name": "stockStreamingApi",
+      "endpoint": "https://7oiyqqqr5j.execute-api.ap-southeast-1.amazonaws.com/dev",
+      "region": "ap-southeast-1"
     }
   ],
   "aws_dynamodb_all_tables_region": "ap-southeast-1",

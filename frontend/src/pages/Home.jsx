@@ -9,7 +9,8 @@ import NewContainer from '../components/containers/NewContainer';
 import NewsBody from '../components/containers/NewsBody';
 import Cards from '../components/cards/Cards';
 import Selector from '../components/selector/Selector';
-
+import Highcharts from 'highcharts';
+import HighchartsReact from 'highcharts-react-official';
 
 import { post, get } from 'aws-amplify/api';
 
@@ -20,12 +21,16 @@ const Home = () => {
     const [operationalRisk, setOperationalRisk] = useState([]);
     const [othersRisk, setOthersRisk] = useState([]);
     const [selectedRisk, setSelectedRisk] = useState('legal risk');
+    const [selectedType, setSelectedType] = useState('news');
+    const [dataPoints, setDataPoints] = useState([]);
     const [riskSummary, setRiskSummary] = useState([]);
     const [mainSummary, setMainSummary] = useState('');
 
     const [step, setStep] = useState([]);
 
     const options = ['legal risk', 'loan risk', 'operation risk', 'other risks'];
+
+    const selections = ['news', 'stock']
 
     const getNewsData = async () => {
         try {
@@ -52,6 +57,36 @@ const Home = () => {
             });
 
             console.log(legalRisk, loanRisk, operationalRisk, othersRisk);
+
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    const getStockData = async () => {
+        try {
+            const { body } = await get({
+                apiName: 'stockStreamingApi',
+                path: `/stock-data/${company.toLowerCase()}`,
+            }).response;
+
+            const data = await body.json();
+
+            console.log(data);
+
+            const stockData = data?.stock_prices
+
+            const today = new Date();
+            setDataPoints(stockData.map((value, index) => {
+                const date = new Date();
+                date.setMonth(today.getMonth() - (stockData.length - 1 - index)); // Adjust months instead of days
+                return [
+                    Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()),
+                    value,
+                ];
+            }));
+
+            console.log(dataPoints);
 
         } catch (error) {
             console.error(error);
@@ -152,6 +187,8 @@ const Home = () => {
 
             await getNewsData();
 
+            await getStockData();
+
             setStep([0]);
 
             for (let i = 0; i < options.length; i++) {
@@ -172,6 +209,80 @@ const Home = () => {
             console.error(error);
         }
     }
+
+
+    const linChartOptions = {
+        chart: {
+            backgroundColor: '#2b2b2b', // Dark background color
+            width: null,
+        },
+        title: {
+            text: 'Stock Data',
+            style: {
+                color: '#FFFFFF', // White text for the title
+            },
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                day: '%b %e',
+            },
+            labels: {
+                style: {
+                    color: '#FFFFFF', // White labels on the x-axis
+                },
+            },
+            lineColor: '#FFFFFF', // White line for x-axis
+            tickColor: '#FFFFFF', // White ticks on x-axis
+        },
+        yAxis: {
+            title: {
+                text: 'Value',
+                style: {
+                    color: '#FFFFFF', // White text for y-axis title
+                },
+            },
+            labels: {
+                style: {
+                    color: '#FFFFFF', // White labels on the y-axis
+                },
+            },
+            gridLineColor: '#505050', // Darker grid lines
+        },
+        legend: {
+            itemStyle: {
+                color: '#FFFFFF', // White text in the legend
+            },
+            itemHoverStyle: {
+                color: '#FFFFFF', // White text on hover in the legend
+            },
+        },
+        tooltip: {
+            backgroundColor: '#2b2b2b', // Match tooltip background with chart background
+            style: {
+                color: '#FFFFFF', // White text in tooltips
+            },
+        },
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    color: '#FFFFFF', // White data labels
+                },
+                marker: {
+                    lineColor: '#333', // Marker outline color
+                },
+            },
+        },
+        series: [
+            {
+                name: 'Data',
+                data: dataPoints,
+                color: 'rgba(255, 105, 180, 1)'
+            },
+        ],
+    };
+
+
 
     const filteredRisks = useMemo(() => {
         console.log(riskSummary);
@@ -205,58 +316,68 @@ const Home = () => {
                 <Body>
                     <>
                         <h3>
-                            News Fetched
+                            Data Fetched
                         </h3>
-                        <p>
-                            News fetched will be categorized into 4 types of categories of risk: legal, loan, operational and others.
-                        </p>
+                        <Selector options={selections} selected={selectedType} setOption={setSelectedType} />
+                        {selectedType === 'news' &&
+                            <p>
+                                News fetched will be categorized into 4 types of categories of risk: legal, loan, operational and others.
+                            </p>
+                        }
                     </>
-                    <NewContainer>
-                        <h4>
-                            Legal
-                        </h4>
-                        {legalRisk.length === 0 && <p>
-                            Sorry, no articles found for this section
-                        </p>}
-                        <NewsBody>
-                            {legalRisk.map((news, index) => (
-                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                            ))}
-                        </NewsBody>
-                        <h4>
-                            Loan
-                        </h4>
-                        {loanRisk.length === 0 && <p>
-                            Sorry, no articles found for this section
-                        </p>}
-                        <NewsBody>
-                            {loanRisk.map((news, index) => (
-                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                            ))}
-                        </NewsBody>
-                        <h4>
-                            Operational
-                        </h4>
-                        {operationalRisk.length === 0 && <p>
-                            Sorry, no articles found for this section
-                        </p>}
-                        <NewsBody>
-                            {operationalRisk.map((news, index) => (
-                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                            ))}
-                        </NewsBody>
-                        <h4>
-                            Others
-                        </h4>
-                        {othersRisk.length === 0 && <p>
-                            Sorry, no articles found for this section
-                        </p>}
-                        <NewsBody>
-                            {othersRisk.map((news, index) => (
-                                <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
-                            ))}
-                        </NewsBody>
-                    </NewContainer>
+                    {selectedType === 'news' &&
+                        <NewContainer>
+                            <h4>
+                                Legal
+                            </h4>
+                            {legalRisk.length === 0 && <p>
+                                Sorry, no articles found for this section
+                            </p>}
+                            <NewsBody>
+                                {legalRisk.map((news, index) => (
+                                    <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                                ))}
+                            </NewsBody>
+                            <h4>
+                                Loan
+                            </h4>
+                            {loanRisk.length === 0 && <p>
+                                Sorry, no articles found for this section
+                            </p>}
+                            <NewsBody>
+                                {loanRisk.map((news, index) => (
+                                    <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                                ))}
+                            </NewsBody>
+                            <h4>
+                                Operational
+                            </h4>
+                            {operationalRisk.length === 0 && <p>
+                                Sorry, no articles found for this section
+                            </p>}
+                            <NewsBody>
+                                {operationalRisk.map((news, index) => (
+                                    <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                                ))}
+                            </NewsBody>
+                            <h4>
+                                Others
+                            </h4>
+                            {othersRisk.length === 0 && <p>
+                                Sorry, no articles found for this section
+                            </p>}
+                            <NewsBody>
+                                {othersRisk.map((news, index) => (
+                                    <Cards key={index} name={news.title} desciption={news.description} href={news.url} author={news.author} publicatedAt={news.publishedAt} source={news.source.name} urlToImage={news.urlToImage} />
+                                ))}
+                            </NewsBody>
+                        </NewContainer>
+                    }
+                    {selectedType === 'stock' &&
+                        <NewContainer>
+                            <HighchartsReact highcharts={Highcharts} options={linChartOptions} />
+                        </NewContainer>
+                    }
                 </Body>}
             {step.includes(1) &&
                 <Body>

@@ -41,6 +41,20 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
+    },
+    "stockStreamingApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "stockStreamingLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "function": {
@@ -57,6 +71,11 @@
     "riskSummaryLambda": {
       "build": true,
       "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "stockStreamingLambda": {
+      "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
@@ -107,6 +126,22 @@
         {
           "category": "function",
           "resourceName": "riskSummaryLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_stockStreamingLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "stockStreamingLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_stockStreamingLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "stockStreamingLambda"
         }
       ]
     }

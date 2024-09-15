@@ -10,6 +10,7 @@ const BackgroundContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding: 10vh 5vw;
+    gap: 20px;
     
 `;
 
