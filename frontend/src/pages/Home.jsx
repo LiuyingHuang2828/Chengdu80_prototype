@@ -58,6 +58,11 @@ const Home = () => {
                 return null;
             });
 
+            if (data.length === 0) {
+                setError(`No News Found for ${company}, maybe there is a spelling mistake, or the company is not in the database`);
+                return "No News Found";
+            }
+
             console.log(legalRisk, loanRisk, operationalRisk, othersRisk);
 
         } catch (error) {
@@ -176,6 +181,14 @@ const Home = () => {
         try {
 
             setStep([]);
+            // Reset states
+            setLoanRisk([]);
+            setLegalRisk([]);
+            setOperationalRisk([]);
+            setOthersRisk([]);
+            setDataPoints([]);
+            setRiskSummary([]);
+            setMainSummary('');
 
             await post({
                 apiName: 'fetchNewsApi',
@@ -187,14 +200,15 @@ const Home = () => {
                 }
             }).response;
 
-            await getNewsData();
+            const newsRes = await getNewsData();
 
-            await getStockData();
-
-            if (loanRisk.length === 0 && legalRisk.length === 0 && operationalRisk.length === 0 && othersRisk.length === 0) {
-                setError(`No News Found for ${company}, maybe there is a spelling mistake, or the company is not in the database`);
+            if (newsRes === "No News Found") {
                 return;
             }
+
+            setError('');
+
+            await getStockData();
 
             setStep([0]);
 
