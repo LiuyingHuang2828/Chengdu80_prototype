@@ -6,7 +6,7 @@ This project is a **Corporate Risk Assessment Platform** that integrates real-ti
 ## Features
 - **Automated Real-Time Risk Categorization**: Fetches and classifies real-time news into four risk types: Operational, Legal, Loan, and Other Risks.
 - **AI-Driven Summarization**: Generates structured summaries and risk scores using GPT-based models (GPT Turbo and GPT Instruct).
-- **Risk-Stock Correlation**: Provides visual insights into how corporate risks affect stock prices over different timeframes (1 week, 1 month, 3 months).
+- **Risk-Stock Correlation**: Provides visual insights into how corporate risks affect stock prices.
 - **Interactive Dashboard**: Displays risk scores in pie charts, stock trend graphs, and real-time alerts for early risk warnings.
 
 ## Project Workflow
