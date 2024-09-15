@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/stock-data": {
+      "name": "/stock-data",
+      "lambdaFunction": "stockStreamingLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

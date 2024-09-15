@@ -27,7 +27,7 @@ class NewsFetcher:
         self.risk_types = {
             'operation risk': f'{self.company_name} operational risk OR {self.company_name} business disruption',
             'legal risk': f'{self.company_name} legal risk OR {self.company_name} lawsuits OR {self.company_name} compliance',
-            'loan risk': f'{self.company_name} loan risk OR {self.company_name} credit risk OR {self.company_name} default',
+            'loan risk': f'{self.company_name} loan OR {self.company_name} credit OR {self.company_name} debt OR {self.company_name} repayment OR {self.company_name} borrowing OR {self.company_name} financial issues OR {self.company_name} creditworthiness OR {self.company_name} lending',
             'other risks': f'{self.company_name} corporate risk OR {self.company_name} business risk OR {self.company_name} financial risk'
         }
 

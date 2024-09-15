@@ -16,6 +16,8 @@ const CardsContainer = styled(Link)`
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     transition: transform 0.5s;
     max-height: 400px;
+    min-height: 400px;
+    min-width: 300px;
 
     h5 {
         font-size: 20px;

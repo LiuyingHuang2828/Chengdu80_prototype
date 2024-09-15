@@ -1,2 +1,8 @@
 requests
 python-dotenv
+yfinance
+lxml
+langchain
+langchain-openai
+openai
+dask[complete]

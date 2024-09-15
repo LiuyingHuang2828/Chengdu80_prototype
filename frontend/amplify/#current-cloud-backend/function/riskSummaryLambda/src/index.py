@@ -19,7 +19,7 @@ def summarize_and_score_content(company_name, text, risk_category):
     messages = [
         {"role": "system", "content": "You are a helpful assistant that summarizes risk-related news and provides a risk score based on the severity of the risks."},
         {"role": "user", "content": f"""
-        Please provide a detailed summary for the following {risk_category} risk news articles. 
+        Please provide a detailed summary for the following {risk_category} risk news articles, do note that some articles may not be related to the risk category: 
         The summary must follow this structure:
         
         1. **Summary**: Provide a detailed summary of the major incidents or events related to the {risk_category} risk, covering all key points. 
@@ -29,7 +29,7 @@ def summarize_and_score_content(company_name, text, risk_category):
         Use the following format, with h4 headers in markdown in react-markdown format:
         Summary: [Detailed summary here]
         Impact: [Detailed impact explanation here]
-        Risk Score: [Risk score out of 10]
+        Risk Score: [Risk score out of 10]/10
         
         Here are the {risk_category} risk news articles:
         \n\n{text}

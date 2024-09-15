@@ -47,3 +47,8 @@ li {
   font-weight: 300;
   color: white;
 }
+
+.error-message {
+  color: red;
+  font-weight: 600;
+}
