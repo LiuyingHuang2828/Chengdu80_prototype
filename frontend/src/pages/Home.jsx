@@ -11,6 +11,7 @@ import Cards from '../components/cards/Cards';
 import Selector from '../components/selector/Selector';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
+import Divider from '../components/divider/Divider';
 
 import { post, get } from 'aws-amplify/api';
 
@@ -25,6 +26,7 @@ const Home = () => {
     const [dataPoints, setDataPoints] = useState([]);
     const [riskSummary, setRiskSummary] = useState([]);
     const [mainSummary, setMainSummary] = useState('');
+    const [error, setError] = useState('');
 
     const [step, setStep] = useState([]);
 
@@ -189,6 +191,11 @@ const Home = () => {
 
             await getStockData();
 
+            if (loanRisk.length === 0 && legalRisk.length === 0 && operationalRisk.length === 0 && othersRisk.length === 0) {
+                setError(`No News Found for ${company}, maybe there is a spelling mistake, or the company is not in the database`);
+                return;
+            }
+
             setStep([0]);
 
             for (let i = 0; i < options.length; i++) {
@@ -217,7 +224,7 @@ const Home = () => {
             width: null,
         },
         title: {
-            text: 'Stock Data',
+            text: `Stock Prices for ${company}`,
             style: {
                 color: '#FFFFFF', // White text for the title
             },
@@ -310,6 +317,7 @@ const Home = () => {
                     Enter a company name
                 </h3>
                 <Input placeholder="Company Name" type="text" onChange={(e) => setCompany(e.target.value)} value={company} />
+                {error && <p className='error-message'>{error}</p>}
                 <Button name="Analyze" onClick={findNewsData} />
             </Body>
             {step.includes(0) &&
@@ -381,6 +389,7 @@ const Home = () => {
                 </Body>}
             {step.includes(1) &&
                 <Body>
+                    <Divider />
                     <h3>
                         Risk Analysis
                     </h3>
@@ -398,6 +407,7 @@ const Home = () => {
             }
             {step.includes(2) &&
                 <Body>
+                    <Divider />
                     <h3>
                         Main Summary
                     </h3>
